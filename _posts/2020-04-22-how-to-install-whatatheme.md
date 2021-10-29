@@ -8,6 +8,7 @@ tags:
 - how to
 - setup
 - theme
+categories: Tech
 ---
 
 # What is WhatATheme?

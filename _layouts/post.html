@@ -43,6 +43,18 @@ layout: compress
               {% assign i = i | plus:1 %}
               {% endfor %}
             </p>
+            <p class="subtitle is-uppercase post-categories">
+              <i class="fas fa-tags"></i>
+              {% if post %}
+              {% assign categories = post.categories %}
+              {% else %}
+              {% assign categories = page.categories %}
+              {% endif %}
+              {% for category in categories %}
+              <a class="tag is-link" href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+              {% unless forloop.last %}&nbsp;{% endunless %}
+              {% endfor %}
+            </p>
             {%- endunless -%}
             {% assign words = content | number_of_words %}
             {%- unless content.size == 0 -%}
