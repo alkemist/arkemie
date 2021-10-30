@@ -1,4 +1,5 @@
 # alkemist.github.io
 
-Serve : bundle exec jekyll serve  
+Install : bundle install  
 Update : bundle update  
+Serve : bundle exec jekyll serve --livereload  
