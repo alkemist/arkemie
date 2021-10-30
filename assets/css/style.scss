@@ -108,7 +108,7 @@ a.navbar-item.is-active {
 
 #blog {
     .hero-body {
-        padding: 3rem 0.25rem 1rem 0.25rem;
+        padding: 3rem 1rem 1rem 1rem;
     }
 
     .container {
@@ -315,6 +315,12 @@ a.navbar-item.is-active {
 
     .tag {
         margin: 0.15rem auto;
+        text-decoration: none;
+
+        &:hover {
+            background-color: #505050;
+            text-decoration: none;
+        }
     }
     .content {
         ol, ul, blockquote {

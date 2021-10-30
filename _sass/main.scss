@@ -45,6 +45,17 @@ body {
     }
 }
 
+.tag {
+    margin: 0.15rem auto;
+    text-decoration: none !important;
+
+    &:hover {
+        background-color: #505050 !important;
+        color: #3273dc;
+        text-decoration: none !important;;
+    }
+}
+
 .is-active {
     font-weight: bold;
 }
@@ -63,6 +74,12 @@ hr {
 .column {
     margin: auto 0.5rem;
     padding: 0.5rem;
+}
+
+#footer {
+    .column{
+        margin: 0 0.5rem auto;
+    }
 }
 
 .searchResult {

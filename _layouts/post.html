@@ -29,38 +29,20 @@ layout: compress
             {% unless page.description.size == 0 %}
             <p id="description" class="content is-small has-text-weight-medium is-uppercase">{{page.description | strip | strip_html | strip_newlines }}</p>
             {% endunless %}
-            <p class="subtitle is-6 is-uppercase has-text-weight-normal has-text-black-ter">Published on
-              <b>{{ page.date | date: "%-B %d, %Y" }}</b> by <a href="{% if site.author-url %}{{site.author-url}}{% else %}{{site.url}}{{site.baseurl}}/#about{% endif %}" target="_blank"><b class="has-text-link"><u>{{site.author-name}}</u></b>
+            <p class="subtitle is-6 is-uppercase has-text-weight-normal has-text-black-ter">Publié le
+              <b>{{ page.date | date: "%d %-B %Y" }}</b>
               </a>
             </p>
-            {%- assign tags = page.tags -%}
-            {%- unless tags.size == 0 -%}
-            <p class="subtitle is-uppercase">
-              <i class="fas fa-tags"></i>
-              {% assign i = 0 %}
-              {% for tags in page.tags %}
-              <span class="tag is-link">{{page.tags[i]}}</span>
-              {% assign i = i | plus:1 %}
-              {% endfor %}
-            </p>
-            <p class="subtitle is-uppercase post-categories">
-              <i class="fas fa-tags"></i>
-              {% if post %}
-              {% assign categories = post.categories %}
-              {% else %}
-              {% assign categories = page.categories %}
-              {% endif %}
-              {% for category in categories %}
-              <a class="tag is-link" href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
-              {% unless forloop.last %}&nbsp;{% endunless %}
-              {% endfor %}
-            </p>
-            {%- endunless -%}
+            {% include categories.html %}
             {% assign words = content | number_of_words %}
             {%- unless content.size == 0 -%}
-            <p class="subtitle is-uppercase"><i class="fas fa-clock"></i> <b class="has-text-link">
+            <p class="subtitle is-uppercase">
+              <i class="fas fa-clock"></i>
+              Lecture
+              <b class="has-text-link">
                 {{ words | divided_by:180 }} min
-              </b>READ</p>
+              </b>
+            </p>
             {%- endunless -%}
           </div>
         </div>

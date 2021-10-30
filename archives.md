@@ -1,5 +1,5 @@
 ---
 layout: categories
-title: Catégories
+title: Archives
 ---
 
