@@ -8,18 +8,17 @@ baseurl:
 
 # Title of the Site
 title: Alkemist
-tagline: Tagline
+tagline: A side project
 # Description of the Site
-description: Description
+description: A side project
 # URL of Image of the Site
-site-image: "/WhatATheme/assets/images/1280x720 Placeholder.png"
+site-image: /assets/images/cercle-alchimique.jpg
 # Keywords of the Site
 site-keywords:
 # URL for the Image of custom Favicon
-favicon-url: 
+favicon-url: /assets/images/favicon.png
 
-# URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
-heroimage: /assets/images/389694.jpg
+heroimage: /assets/images/cercle-alchimique.jpg
 
 # Social Media and Contact
 # If you don't want to use any icon, you can leave them blank.
@@ -39,7 +38,7 @@ seo:
   type: BlogPosting
 
 image:
-  path: /assets/images/avatar_bleu.png
+  path: /assets/images/cercle-alchimique.jpg
   height: 100
   width: 100
 

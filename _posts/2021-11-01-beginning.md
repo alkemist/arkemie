@@ -1,7 +1,7 @@
 ---
 title: Origine  
 layout: post  
-post-image: "/assets/images/SamplePost.png"  
+post-image: "/assets/images/racine.jpeg"  
 description: Origine du projet  
 categories:   
 - Construction  
