@@ -76,6 +76,24 @@ hr {
     padding: 0.5rem;
 }
 
+#post{
+    .subtitle{
+        margin-bottom: 0.5rem;
+    }
+    .column {
+        margin: 0 0.5rem;
+    }
+    #description{
+        margin: 1rem 0 0 0;
+    }
+    .information{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+}
+
 #footer {
     .column{
         margin: 0 0.5rem auto;

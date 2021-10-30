@@ -25,25 +25,29 @@ layout: compress
               <img src="{{page.post-image}}" alt="{{post.title}}" id="post-image">
             </figure>
           </div>
-          <div class="subtitle column is-5 has-text-left-desktop has-text-left-fullhd has-text-left-tablet has-text-center-mobile">
-            {% unless page.description.size == 0 %}
-            <p id="description" class="content is-small has-text-weight-medium is-uppercase">{{page.description | strip | strip_html | strip_newlines }}</p>
-            {% endunless %}
-            <p class="subtitle is-6 is-uppercase has-text-weight-normal has-text-black-ter">Publié le
-              <b>{{ page.date | date: "%d %-B %Y" }}</b>
-              </a>
-            </p>
-            {% include categories.html %}
-            {% assign words = content | number_of_words %}
-            {%- unless content.size == 0 -%}
-            <p class="subtitle is-uppercase">
-              <i class="fas fa-clock"></i>
-              Lecture
-              <b class="has-text-link">
-                {{ words | divided_by:180 }} min
-              </b>
-            </p>
-            {%- endunless -%}
+          <div class="information subtitle column is-5 has-text-left-desktop has-text-left-fullhd has-text-left-tablet has-text-center-mobile">
+            <div>
+              <p class="subtitle is-6 is-uppercase has-text-weight-normal has-text-black-ter">Publié le
+                <b>{{ page.date | date: "%d %-B %Y" }}</b>
+                </a>
+              </p>
+              {% include categories.html %}
+            </div>
+            <div>
+              {% unless page.description.size == 0 %}
+                <p id="description" class="content has-text-weight-medium is-uppercase">{{page.description | strip | strip_html | strip_newlines }}</p>
+              {% endunless %}
+              {% assign words = content | number_of_words %}
+              {%- unless content.size == 0 -%}
+                <p class="subtitle is-uppercase content is-small">
+                  <i class="fas fa-clock"></i>
+                  Lecture
+                  <b class="has-text-link">
+                    {{ words | divided_by:180 }} min
+                  </b>
+                </p>
+              {%- endunless -%}
+            </div>
           </div>
         </div>
         <div class="content has-text-justified-desktop has-text-justified-fullhd has-text-justified has-text-justified-tablet has-text-left-mobile">
