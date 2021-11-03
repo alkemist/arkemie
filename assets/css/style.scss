@@ -353,6 +353,19 @@ a.navbar-item.is-active {
 }
 
 #page-section {
+    @media (max-width: 768px) {
+        .section {
+            padding-left: 0;
+            padding-right: 0;
+
+            .title {
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+            }
+        }
+    }
+
+
     .content {
         ul, ol, blockquote {
             display: inline-block;
