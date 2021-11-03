@@ -2,4 +2,5 @@
 layout: vuejs
 ---
 
-<hello-world></hello-world>
+<hello-world1></hello-world1>
+<hello-world2></hello-world2>
