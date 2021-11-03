@@ -75,7 +75,4 @@ build-iPhoneSimulator/
 # Dependency directories
 node_modules/
 
-# Vue
-dist
-
 # End of https://www.toptal.com/developers/gitignore/api/jekyll,ruby
