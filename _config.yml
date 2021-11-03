@@ -106,3 +106,7 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - webpack.config.babel.js
+  - node_modules
+  - package.lock.json
+  - package.json
