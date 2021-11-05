@@ -13,6 +13,6 @@ Github : Hebergement
 
 ### Ecriture
 
-Google Doc : Edition et hebergement des brouillons
+Google Doc : Edition et hebergement des brouillons  
 Antidote : Corrections et amélioration de l'écriture  
 Mindomo : Mind map pour l'écriture des affaires  
