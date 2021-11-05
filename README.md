@@ -2,7 +2,7 @@
 
 ## Description
 
-Projet d'écriture d'un receuil de nouvelles dans un univers steampunk remplis d'alchimie  
+Projet d’écriture d’un receuil de nouvelles dans un univers steampunk remplis d’alchimie.  
 
 ## Outils 
 
