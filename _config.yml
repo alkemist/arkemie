@@ -12,13 +12,13 @@ tagline: Quand les symboles s’unissent aux nombres
 # Description of the Site
 description: Quand les symboles s’unissent aux nombres
 # URL of Image of the Site
-site-image: /assets/images/cercle-alchimique.jpg
+site-image: /assets/images/alchimie/cercle-alchimique.jpg
 # Keywords of the Site
 site-keywords:
 # URL for the Image of custom Favicon
 favicon-url: /assets/images/favicon.png
 
-heroimage: /assets/images/cercle-alchimique.jpg
+heroimage: /assets/images/alchimie/cercle-alchimique.jpg
 
 # Social Media and Contact
 # If you don't want to use any icon, you can leave them blank.
@@ -38,7 +38,7 @@ seo:
   type: BlogPosting
 
 image:
-  path: /assets/images/cercle-alchimique.jpg
+  path: /assets/images/alchimie/cercle-alchimique.jpg
 
 # Name of the Author
 author-name: Alkemist
