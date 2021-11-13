@@ -6,7 +6,7 @@ layout: compress
 <html>
 
 <head>
-  {% include head.html %}
+    {% include head.html %}
 </head>
 
 <body>
@@ -22,7 +22,9 @@ layout: compress
         <div class="columns is-variable is-5">
           <div class="column is-6">
             <figure class="image is-16by9 has-shadow">
-              <img src="{{page.post-image}}" alt="{{post.title}}" id="post-image">
+                <a data-fslightbox="post-image" href="{{page.post-image}}" data-alt="{{post.title}}">
+                    <img src="{{page.post-image}}" alt="{{post.title}}">
+                </a>
             </figure>
           </div>
           <div class="information subtitle column is-5 has-text-left-desktop has-text-left-fullhd has-text-left-tablet has-text-center-mobile">
@@ -53,31 +55,10 @@ layout: compress
         <div class="content has-text-justified-desktop has-text-justified-fullhd has-text-justified has-text-justified-tablet has-text-left-mobile">
           <p>{{ content }}</p>
         </div>
-        {% unless site.disqus-shortname == "" %}
-        <div class="disqus-comments" id="disqus_thread"></div>
-        {% endunless %}
       </div>
     </div>
   </section>
   {% include footer.html %}
+  <script src="/assets/js/fslightbox.js"></script>
 </body>
-<script>
-  /**
-   *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-   *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-  /*
-  var disqus_config = function () {
-  this.page.url = PAGE_URL;  Replace PAGE_URL with your page's canonical URL variable
-  this.page.identifier = PAGE_IDENTIFIER; Replace PAGE_IDENTIFIER with your page's unique identifier variable
-  };
-  */
-  (function () { /* DON'T EDIT BELOW THIS LINE */
-    var d = document,
-      s = d.createElement('script');
-    s.src = 'https://{{site.disqus-shortname}}.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-  })();
-</script>
-
 </html>

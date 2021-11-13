@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+#zbox-overlay {
+  background-color: #000;
+  bottom: 0;
+  left: 0;
+  opacity: 0.1;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 800;
+}
+.zbox-content
+{
+  position:fixed;
+  z-index:801;
+  opacity: 0.1;
+  text-align:center;
+  padding:0px;
+  background-color:#ffffff;
+  font-size:0;
+}
+#zbox-magnifier
+{
+  box-shadow: 0px 5px 5px rgba(0,0,0,1);
+  -webkit-box-shadow: 0px 5px 5px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 5px 5px rgba(0,0,0,1);
+  display:none;
+  background-repeat:no-repeat;
+  background-image:none;
+  background-position:-1000px -1000px;
+  z-index:802; position:fixed;
+  left:500px;
+  top:500px;
+  border:1px solid black;
+  background-color:#fff;
+  width:300px;
+  height:300px;
+  border-radius: 300px;
+}
+
+.zbox-screen
+{
+  overflow:hidden;
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: 803;
+}
+#zbox-spinner
+{
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: 803;
+  width:32px;
+  height:32px;
+  text-indent:-9999px;
+  background-image:url(../../assets/images/spinner.gif);
+  background-repeat:no-repeat;
+}
+.zbox-button
+{
+  background-color:rgba(0,0,0,0.6);
+  background-repeat:no-repeat;
+  cursor:pointer;
+  display:block;
+  position: absolute;
+  width:32px;
+  height:100%;
+}
+.zbox-button.left
+{
+  left:-32px;
+  top:0px;
+}
+.zbox-button.right
+{
+  right:-32px;
+  top:0px;
+}
+.zbox-button.close
+{
+  display: none;
+  right:0;
+  top:0;
+  background-position:0px 0px;
+}
+
+

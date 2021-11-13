@@ -18,6 +18,8 @@
   "author": "Christopher Murphy",
   "license": "MIT",
   "dependencies": {
+    "fslightbox": "^3.3.0-2",
+    "openseadragon": "^2.4.2",
     "vue": "^2.6.11"
   },
   "devDependencies": {
