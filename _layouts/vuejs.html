@@ -7,11 +7,20 @@ layout: compress
 
 <head>
     {% include head.html %}
+    <style>
+        .hero-body{
+            padding-left: 0;
+            padding-right: 0;
+            padding-bottom: 0;
+        }
+        .hero-body .container{
+            max-width: fit-content;
+        }
+    </style>
 </head>
 
 <body>
     {% include navbar.html %}
-
 
     <!--Main Section-->
     <section class="hero is-fullheight" id="project">
@@ -23,11 +32,6 @@ layout: compress
             </div>
         </div>
     </section>
-
-
-    <!--Footer-->
-    {% include footer.html %}
-    <!--Scripts-->
     {% include scripts.html %}
 </body>
 
