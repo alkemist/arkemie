@@ -2,7 +2,7 @@
 title: L’univers d’Arkemie en détail 
 layout: post  
 post-image: "/assets/images/nature/rain.jpeg"  
-description: Impact de l’Arkemie dans la société et dans ses diverses composantes
+description: Impact de l’Arkemie dans la société et dans ses diverses composantes.
 categories:   
 - Construction  
 ---
