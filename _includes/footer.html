@@ -29,12 +29,7 @@
 
             <!--Blog-post Section-->
             <div class="column has-text-white">
-                <h3 style="margin-bottom: 10px">Articles récents</h3>
-                {% for post in site.posts offset: 0 limit:3 %}
-                <div style="text-align: center">
-                    <a href="{{post.url | absolute_url}}">{{post.title}}</a>
-                </div>
-                {% endfor %}
+                
             </div>
         </div>
     </div>
