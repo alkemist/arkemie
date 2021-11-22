@@ -39,7 +39,7 @@ De nombreux accidents s’enchaînaient et de nombreuses vies humaines furent sa
 
 L’église, durement opposée à l’essor de ces pratiques, envoyé des émissaires pour assassiner les arkemistes.
 
-L’état, tiraillé entre l’Église et le pouvoir des gros groupes industriels, essayait de légiférer sur ces nouvelles avancées scientifiques et les pratiques qui en découlaient
+L’état, tiraillé entre l’Église et le pouvoir des gros groupes industriels, essayait de légiférer sur ces nouvelles avancées scientifiques et les pratiques qui en découlaient.  
 Pour cela, il ouvrit une organisation qui avait pour but de contrôler la pratique de l’Arkemie en société, l’académie des Arkemistes.
 
 ------
