@@ -24,7 +24,8 @@ title: Dictionnaire d'épicènes
 - concierge
 - détective
 - diplomate
-- émule (Personne qui cherche à égaler ou à surpasser qqn en qqch. de louable.)
+- élève
+- émule : Personne qui cherche à égaler ou à surpasser qqn en qqch. de louable.
 - enfant
 - fonctionnaire
 - gestionnaire
@@ -32,6 +33,7 @@ title: Dictionnaire d'épicènes
 - guide
 - journaliste
 - malade
+- membre
 - nomade
 - partenaire
 - prestataire
@@ -39,20 +41,20 @@ title: Dictionnaire d'épicènes
 - secrétaire
 - spécialiste
 - subalterne
-- élève
 
 # Genre grammatical défini
 
+- âme
 - animal
+- bandit
 - créature
+- être
 - individu
-- membre
+- monstre
 - parent
 - personne
 - second
 - sujet
-- âme
-- être
 
 
 
