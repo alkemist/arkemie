@@ -60,10 +60,10 @@ Ensuite, s’il n’existe pas d’épicène ou de forme englobante, il suffit d
 Si l’écriture détaillée est trop lourde, le point médian peut permettre de réduire les formulations.   
 Elle fonctionne ainsi :   
   
-`<racine du mot> <suffixe masculin> · <suffixe féminin> <marque du pluriel>`  
+`<racine du mot> <suffixe masculin> · <suffixe féminin> · <marque du pluriel>`  
   
 > **Exemples d'abréviations inclusives** :    
-> les analystes enjoué·es, les élèves bienveillant·es
+> les analystes enjoué·e·s, les élèves bienveillant·e·s
   
 ## Mots mixtes
   
