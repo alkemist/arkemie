@@ -148,6 +148,8 @@ GEM
     jekyll-mentions (1.6.0)
       html-pipeline (~> 2.3)
       jekyll (>= 3.7, < 5.0)
+    jekyll-microtypo (1.2.6)
+      jekyll (>= 3.0, < 5.0)
     jekyll-optional-front-matter (0.3.2)
       jekyll (>= 3.0, < 5.0)
     jekyll-paginate (1.1.0)
@@ -307,6 +309,7 @@ DEPENDENCIES
   github-pages
   jekyll-admin
   jekyll-feed
+  jekyll-microtypo
   jekyll-seo-tag
   jekyll-sitemap
   rack

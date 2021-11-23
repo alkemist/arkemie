@@ -8,6 +8,7 @@ body {
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth !important;
     transition: all 0.25s ease;
+    background: #F4F5F6;
 }
 
 
@@ -107,6 +108,13 @@ hr {
             text-decoration: underline;
         }
     }
+}
+
+.vue-load-image, .vue-load-image > div{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 a[data-fslightbox] {

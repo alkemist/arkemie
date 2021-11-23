@@ -1,13 +1,13 @@
 ---
-layout: compress
+layout: compress_json
 ---
 [
   {% for post in site.posts %}
     {
       "title"    : "{{ post.title | escape }}",
-      "tags"     : "{{ post.tags | join: ', ' }}",
+      "category" :  {{ post.categories | jsonify }},
       "url"      : "{{ site.url }}{{ site.baseurl }}{{ post.url }}",
-      "date"     : "{{ post.date | date: '%-B %d, %Y' }}",
+      "date"     : "{{ post.date | date: '%d %-B %Y' }}",
       "description" : "{{ post.description | strip_newlines | strip_html | strip | escape }}",
       "content" : "{{ post.content | truncate: '300' | strip_html | strip_newlines | strip | escape }}",
       "image" : "{{post.post-image}}",

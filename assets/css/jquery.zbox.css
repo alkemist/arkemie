@@ -56,7 +56,7 @@
   width:32px;
   height:32px;
   text-indent:-9999px;
-  background-image:url(../../assets/images/spinner.gif);
+  background-image:url(../images/loader.gif);
   background-repeat:no-repeat;
 }
 .zbox-button

@@ -87,6 +87,9 @@ jekyll_admin:
   hidden_links: ~
   homepage: "posts"
 
+microtypo:
+  median: true
+
 # Exclude
 exclude:
   - .sass-cache/
