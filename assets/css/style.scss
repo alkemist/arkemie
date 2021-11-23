@@ -62,6 +62,9 @@ a.navbar-item.is-active {
         opacity: 0.25;
         content: "";
     }
+    &.not-found::before {
+        background-image: url('/assets/images/nature/bridge.jpeg');
+    }
 }
 .title {
     margin: auto 0.75rem!important;
