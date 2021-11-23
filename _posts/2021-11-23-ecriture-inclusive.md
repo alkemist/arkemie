@@ -39,38 +39,38 @@ Voici donc le résultat de mes recherches.
 # Solution
 
 ## Reformulation
-
-Dans un premier temps, l’objectif est de favoriser la reformulation via des mots et formules épicènes ou englobantes.   
   
+Dans un premier temps, l’objectif est de favoriser la reformulation via des mots et formules épicènes ou englobantes.   
+   
 Un mot épicène est un mot désignant un être animé et qui n’est pas marqué du point de vue du sexe. Il peut être employé au masculin et au féminin sans variation de forme.  
-
-> **Exemples de mots épicènes** :  
+  
+**Exemples de mots épicènes** :  
 > alter ego, animal, âme, créature, être, parent, personne, individu, sujet, adulte, bénévole, collègue élèvent, enfant, gosse, malade, nomade, partenaire  
-
-> **Exemples de formules englobantes** :  
+  
+**Exemples de formules englobantes** :  
 > L’équipe, les personnes, la clientèle, la concurrence, la direction, l’effectif, le personnel, la communauté, la foule, tout le monde  
 
 Ensuite, s’il n’existe pas d’épicène ou de forme englobante, il suffit de détailler par l’usage des 2 genres.  
 
-> **Exemples d'écriture détaillée** :   
+**Exemples d'écriture détaillée** :   
 > les développeurs et développeuses, les intégrateurs et intégratrices, les consultants et consultantes  
-
+  
 ## Abréviation inclusive 
-
+  
 Si l’écriture détaillée est trop lourde, le point médian peut permettre de réduire les formulations.   
 Elle fonctionne ainsi :   
-
+  
 `<racine du mot> <suffixe masculin> · <suffixe féminin> <marque du pluriel>`  
   
-> **Exemples d'abréviations inclusives** :    
+**Exemples d'abréviations inclusives** :    
 > les analystes enjoué·es, les élèves bienveillant·es
-
+  
 ## Mots mixtes
-
+  
 En dernier recours, il est possible d’utiliser des adjectifs, articles et pronoms qui regroupent les 2 genres en un.   
 Certains sont plus utilisés que d’autres, le pronom mixte iel est communément utilisé et accepté.  
-
-> **Exemples de mots mixtes** :  
+  
+**Exemples de mots mixtes** :  
 > toustes, celleux  
 
 # Sources
