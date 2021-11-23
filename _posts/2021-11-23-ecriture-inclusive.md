@@ -45,15 +45,15 @@ Dans un premier temps, l’objectif est de favoriser la reformulation via des mo
 Un mot épicène est un mot désignant un être animé et qui n’est pas marqué du point de vue du sexe. Il peut être employé au masculin et au féminin sans variation de forme.  
 
 > Exemples de mots épicènes :  
-> alter ego, animal, âme, créature, être, parent, personne, individu, sujet, adulte, bénévole, collègue élèvent, enfant, gosse, malade, nomade, partenaire
+> alter ego, animal, âme, créature, être, parent, personne, individu, sujet, adulte, bénévole, collègue élèvent, enfant, gosse, malade, nomade, partenaire  
 
 > Exemples de formules englobantes :  
-> L’équipe, les personnes, la clientèle, la concurrence, la direction, l’effectif, le personnel, la communauté, la foule, tout le monde
+> L’équipe, les personnes, la clientèle, la concurrence, la direction, l’effectif, le personnel, la communauté, la foule, tout le monde  
 
 Ensuite, s’il n’existe pas d’épicène ou de forme englobante, il suffit de détailler par l’usage des 2 genres.  
 
 > Exemples :   
-> les développeurs et développeuses, les intégrateurs et intégratrices, les consultants et consultantes
+> les développeurs et développeuses, les intégrateurs et intégratrices, les consultants et consultantes  
 
 ## Abréviation inclusive 
 
@@ -71,7 +71,7 @@ En dernier recours, il est possible d’utiliser des adjectifs, articles et pron
 Certains sont plus utilisés que d’autres, le pronom mixte iel est communément utilisé et accepté.  
 
 > Exemples :  
-> toustes, celleux
+> toustes, celleux  
 
 # Sources
 
