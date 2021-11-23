@@ -3,15 +3,16 @@ layout: page
 title: Dictionnaire d'épicènes 
 ---
 
-# Dictionnaire d'épicènes 
+# Genre grammatical indéfini
 
 - acolyte
+- acrobate
 - actionnaire
 - adepte
 - adulte
 - adversaire
 - alter ego
-- animal
+- artiste
 - athlète
 - bénévole
 - cadre
@@ -20,27 +21,38 @@ title: Dictionnaire d'épicènes
 - collègue
 - commis
 - complice
-- créature
+- concierge
 - détective
 - diplomate
+- émule (Personne qui cherche à égaler ou à surpasser qqn en qqch. de louable.)
 - enfant
 - fonctionnaire
 - gestionnaire
 - gosse
 - guide
-- individu
+- journaliste
 - malade
-- membre
 - nomade
-- parent
 - partenaire
-- personne
 - prestataire
 - responsable
-- second
+- secrétaire
 - spécialiste
 - subalterne
+- élève
+
+# Genre grammatical défini
+
+- animal
+- créature
+- individu
+- membre
+- parent
+- personne
+- second
 - sujet
 - âme
-- élève
 - être
+
+
+
