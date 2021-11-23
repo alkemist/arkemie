@@ -75,12 +75,18 @@ Certains sont plus utilisés que d’autres, le pronom mixte iel est communémen
 
 # Sources
 
+&nbsp;
+
 Articles :  
 - <https://www.lalutineduweb.fr/ecriture-inclusive-accessibilite-solutions/>  
 - <https://fr.wikipedia.org/wiki/Langage_%C3%A9pic%C3%A8ne>  
+
+&nbsp;
   
 Liste de termes épicènes ou neutres :  
 - <http://bdl.oqlf.gouv.qc.ca/bdl/gabarit_bdl.asp?id=5465>  
+  
+&nbsp;
   
 Liste de prénom neutre :   
 - <https://entousgenresblog.wordpress.com/2017/04/19/prenoms-neutres-et-non-genres-liste-origines-et-signification/>  
