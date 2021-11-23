@@ -61,7 +61,7 @@ Si l’écriture détaillée est trop lourde, le point médian peut permettre de
 Elle fonctionne ainsi :   
 
 `<racine du mot> <suffixe masculin> · <suffixe féminin> <marque du pluriel>`  
-
+  
 > Exemples :   
 > les analystes enjoué·es, les élèves bienveillant·es
 
