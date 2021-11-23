@@ -1,5 +1,5 @@
 ---
-title: L’univers d’Arkemie en détail 
+title: La société après la découverte de l'arkemie
 layout: post  
 post-image: "/assets/images/nature/rain.jpeg"  
 description: Impact de l’Arkemie dans la société et dans ses diverses composantes.
