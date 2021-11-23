@@ -52,7 +52,7 @@ Un mot épicène est un mot désignant un être animé et qui n’est pas marqu�
 
 Ensuite, s’il n’existe pas d’épicène ou de forme englobante, il suffit de détailler par l’usage des 2 genres.  
 
-> **Exemples d'écriture détaillée** :   
+> **Exemples d'écritures détaillées** :   
 > les développeurs et développeuses, les intégrateurs et intégratrices, les consultants et consultantes  
   
 ## Abréviation inclusive 
