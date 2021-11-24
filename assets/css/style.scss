@@ -62,6 +62,13 @@ a.navbar-item.is-active {
     &.not-found::before {
         background-image: url('/assets/images/nature/bridge.jpeg');
     }
+    &.is-fullheight{
+        @media (orientation: portrait){
+            @supports (-webkit-appearance:none) {
+                min-height: calc(100vh - 56px);
+            }
+        }
+    }
 }
 .title {
     margin: auto 0.75rem!important;
