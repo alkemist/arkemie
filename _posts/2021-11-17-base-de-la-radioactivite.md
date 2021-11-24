@@ -4,7 +4,7 @@ layout: post
 post-image: "/assets/images/alchimie/billes-couleur.jpg"  
 description: "Vulgarisation scientifique des bases de la radioactivité."
 categories:   
-- Sciences
+- Recherche
 ---
 
 # Atome
