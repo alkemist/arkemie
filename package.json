@@ -4,8 +4,8 @@
   "description": "A starter template for Jekyll projects with Vue.js and Vue Single File Components, complete with webpack.",
   "main": "index.js",
   "scripts": {
-    "install": "bundle install",
-    "update": "bundle update",
+    "install-all": "bundle install & npm install",
+    "update-all": "bundle update & npm update",
     "jekyll": "bundle exec jekyll serve --watch --incremental",
     "start": "cross-env NODE_ENV=development webpack --watch",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
@@ -23,7 +23,8 @@
     "vue": "^2.6.11",
     "vue-cal": "^3.10.1",
     "vue-load-image": "^0.2.0",
-    "vue-zoomer": "^0.3.9"
+    "vue-zoomer": "^0.3.9",
+    "vuetify": "^2.6.0"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",

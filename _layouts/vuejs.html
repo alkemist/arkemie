@@ -4,9 +4,10 @@ layout: compress
 
 <!DOCTYPE html>
 <html>
-
 <head>
     {% include head.html %}
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
     <style>
         .hero-body{
             padding-left: 0;
@@ -15,6 +16,9 @@ layout: compress
         }
         .hero-body .container{
             max-width: fit-content;
+        }
+        .container{
+            padding: 0 !important;
         }
     </style>
 </head>
@@ -26,7 +30,7 @@ layout: compress
     <section class="hero is-fullheight" id="project">
         <div class="hero-body">
             <div class="container has-text-centered">
-                <div id="app">
+                <div id="app" data-app>
                     {{ content }}
                 </div>
             </div>
