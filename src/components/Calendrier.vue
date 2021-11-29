@@ -96,5 +96,5 @@ export default {
   .vuecal--month-view .vuecal__cell-date {padding: 4px;}
   .vuecal--month-view .vuecal__no-event {display: none;}
   
-  .vuecal__cell--today {background: rgba(0,0,0,0.1);}
+  .vuecal__cell--today {background: rgba(0,0,0,0.1) !important;}
 </style>
