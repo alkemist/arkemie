@@ -17,9 +17,9 @@ Un atome est constitué de protons, de neutrons et d’électrons.
   
 Un élément chimique est défini par le nombre de protons de son noyau (le numéro atomique).  
 Ils peuvent avoir différentes variantes, avec un nombre de neutrons différent, on appelle cela un isotope.  
-On les distingue par le nombre total de neutrons et protons dans leurs noyaux (le nombre de masse).  
+On les distingue par le nombre total de protons et de neutrons dans leurs noyaux (le nombre de masse).  
 
-Un atome (Carbone par exemple, numéro atomique 6) peut avoir des isotopes stables (C 12 par exemple) puis d’autres, instables et donc radioactifs (C 14 par exemple).
+Un atome (le carbone par exemple, numéro atomique 6, donc 6 protons) peut avoir des isotopes stables (C 12 par exemple, qui a 6 protons et 6 neutrons) puis d’autres, instables et donc radioactifs (C 14 par exemple, qui a 6 protons et 8 neutrons).  
 
 # Rayonnements
 
@@ -46,7 +46,8 @@ Les rayonnements produits peuvent être de 3 types :
 # Période radioactive
 
 Chaque isotope radioactif met un certain temps (période radioactive) pour que la moitié de ses atomes se désintègrent naturellement, indépendamment de son environnement (température ou pression).  
-La décroissance de ce nombre d’atomes suit une décroissance exponentielle.
+On ne peut pas savoir quand un atome va se désintégrer exactement, on peut juste émettre des statistiques basées sur les probabilités qu’un des atomes se désintègre dans un temps donné.  
+La décroissance de ce nombre d’atomes suit une décroissance exponentielle.  
 
 <a data-fslightbox="post-image" href="/assets/images/radioactivité/decroissance-radioactive.jpg" data-alt="Graphique de la décroissance radioactive">
   <img src="/assets/images/radioactivité/decroissance-radioactive.jpg" alt="Graphique de la décroissance radioactive">
