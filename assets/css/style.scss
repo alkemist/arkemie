@@ -147,6 +147,7 @@ a.navbar-item.is-active {
     border-bottom: 0.15rem solid;
 
     input {
+        background: transparent;
         border: none;
         outline: none;
         font-weight: 500 !important;
@@ -159,6 +160,7 @@ a.navbar-item.is-active {
     }
 
     .button {
+        background: transparent;
         transition: all 0.25s ease;
         &:focus {
             outline: 0.25rem solid white;
