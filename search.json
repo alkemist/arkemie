@@ -5,7 +5,6 @@ layout: compress_json
   {% for post in site.posts %}
     {
       "title"    : "{{ post.title | escape }}",
-      "category" :  {{ post.categories | jsonify }},
       "url"      : "{{ site.url }}{{ site.baseurl }}{{ post.url }}",
       "date"     : "{{ post.date | date: '%d %-B %Y' }}",
       "description" : "{{ post.description | strip_newlines | strip_html | strip | escape }}",

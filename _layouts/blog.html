@@ -16,17 +16,17 @@ layout: compress
                 {% include blogpage-heading.html %}
             </div>
         </div>
-        <div id="results-container"></div>
-        <!--Blog Cards Section-->
-        {% for post in site.posts %}
-            {% include blog-card.html %}
-        {% endfor %}
+        <div id="results-container">
+            <!--Blog Cards Section-->
+            {% for post in site.posts %}
+                {% include blog-card.html %}
+            {% endfor %}
         </div>
     </section>
     <br>
     <!--Footer begins here-->
     {% include footer.html %}
-    <script src="{{site.url}}{{site.baseurl}}/assets/js/simple-jekyll-search.js"></script>
+    <script src="{{site.url}}{{site.baseurl}}/assets/js/simple-jekyll-search.min.js"></script>
 
     <script>
         SimpleJekyllSearch({
