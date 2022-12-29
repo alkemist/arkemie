@@ -252,9 +252,6 @@ a.navbar-item.is-active {
         }
     }
     .content {
-        ol, ul, blockquote {
-            display: inline-block;
-        }
         hr{
             background-color: grey;
         }
@@ -267,6 +264,9 @@ a.navbar-item.is-active {
         }
         ul, ol {
             display: inline-block;
+        }
+        blockquote {
+            display: block;
         }
     }
 
