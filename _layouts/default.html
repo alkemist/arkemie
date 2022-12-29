@@ -16,7 +16,8 @@ layout: microtypo
         {% include blogpage-heading.html %}
       </div>
     </div>
-    <div id="results-container">
+    <div id="results-container"></div>
+    <div>
         <!--Blog Cards Section-->
         {% for post in site.posts %}
             {% include blog-card.html %}
@@ -30,14 +31,38 @@ layout: microtypo
   <script src="{{site.url}}{{site.baseurl}}/assets/js/simple-jekyll-search.min.js"></script>
   <script>
     SimpleJekyllSearch({
-      searchInput: document.getElementById('search'),
-      resultsContainer: document.getElementById('results-container'),
-      json: '{{site.url}}{{site.baseurl}}/search.json',
-      searchResultTemplate: '<div style="border: 0.15rem dashed black" class="searchResult columns has-text-centered" id="blog-card"><div class="column is-marginless is-paddingless is-one-third-desktop is-one-third-fullhd is-one-third-tablet"><div class="image is-16by9" style="background-image: url({image});"></div></div><a href="{url}"><div class="column has-text-left-desktop has-text-left-tablet"><h1 class="title is-size-4-touch">{title}</h1><div class="content has-text-grey">{content}<hr class="has-background-grey"><span class="has-text-grey">Published on <span class="has-text-weight-semibold">{date}</span></span> | <i class="fas fa-clock"></i> <span class="has-text-weight-semibold">{readtime} min</span> read</div></div></a></div>',
-      noResultsText: '<div class="subtitle has-text-centered is-uppercase">No Results Found</div><hr class="has-background-black" style="margin: 0.5rem 5rem 2.5rem 5rem">',
-      fuzzy: true,
+        searchInput: document.getElementById('search'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '{{site.url}}{{site.baseurl}}/search.json',
+        searchResultTemplate: '<div style="border: 0.15rem dashed black" class="searchResult columns has-text-centered" id="blog-card">' +
+            '<div class="column is-marginless is-paddingless is-one-third-desktop is-one-third-fullhd is-one-third-tablet">' +
+            '<div class="image is-16by9" style="background-image: url({image});"></div>' +
+            '</div>' +
+            '<a href="{url}">' +
+            '<div class="column has-text-left-desktop has-text-left-tablet">' +
+            '<h1 class="title is-size-4-touch">{title}</h1>' +
+            '<div class="content has-text-grey">{description}<hr class="has-background-grey">' +
+            '<span class="has-text-grey">Publié le <span class="has-text-weight-semibold">{date}</span></span> | <i class="fas fa-clock"></i> <span class="has-text-weight-semibold">Lecture {readtime} min</span>' +
+            '<div style="margin-top: 10px;">' +
+              '<p class="subtitle is-uppercase post-categories">' +
+                '<i class="fas fa-tags"></i>\n' +
+                '<span class="tag is-link has-background-grey">{category}</span>' +
+              '</p>' +
+            '</div>' +
+            '</div></div></a></div>',
+        noResultsText: '<div class="subtitle has-text-centered is-uppercase">Aucun résultat trouvé</div><hr class="has-background-black" style="margin: 0.5rem 5rem 2.5rem 5rem">',
+        fuzzy: false,
     });
   </script>
 </body>
 
 </html>
+
+<p class="subtitle is-uppercase post-categories">
+  <a href="{{site.baseurl}}/archives"><i class="fas fa-tags"></i></a>
+
+  {% for category in categories %}
+  <a class="tag is-link" href="{{site.baseurl}}/archives/#{{category|slugize}}">{{category}}</a>
+  {% unless forloop.last %}&nbsp;{% endunless %}
+  {% endfor %}
+</p>
