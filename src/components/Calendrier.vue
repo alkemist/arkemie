@@ -33,7 +33,7 @@
 <script>
 import axios from 'axios';
 import VueCal from 'vue-cal'
-import 'vue-cal/dist/i18n/fr.js'
+import 'vue-cal/dist/i18n/fr.es.js'
 import 'vue-cal/dist/vuecal.css'
 import 'vuetify/dist/vuetify.min.css'
 
