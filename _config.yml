@@ -30,25 +30,25 @@ github_username:  alkemist
 google-analytics: G-8SYXMRHFJG
 
 author:
-  name: Jérémy ACHAIN
-  url: https://jeremy-achain.dev
+  name: Jaden ACHAIN
+  url: https://jaden-achain.dev
 
 seo:
-  name: Jérémy ACHAIN
+  name: Jaden ACHAIN
   type: BlogPosting
 
 image:
   path: /assets/images/alchimie/cercle-alchimique.jpg
 
 # Name of the Author
-author-name: Alkemist
+author-name: Jaden Alkemist
 # URL for the Image of the Author
 author-image: /assets/images/avatar_bleu.png
 # 60 Words About the Author
 author-about: >
   Développeur web freelance spécialisé Symfony et Angular.
   Introverti hypersensible, idéaliste en quête de sens #ChildFree. #TDAH
-author-url: https://jeremy-achain.dev
+author-url: https://jaden-achain.dev
 
 # SASS
 sass:
