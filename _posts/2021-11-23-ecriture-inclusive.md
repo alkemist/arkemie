@@ -78,8 +78,9 @@ Certains sont plus utilisés que d’autres, le pronom mixte iel est communémen
 &nbsp;
 
 Articles :  
-- <https://www.lalutineduweb.fr/ecriture-inclusive-accessibilite-solutions/>  
-- <https://fr.wikipedia.org/wiki/Langage_%C3%A9pic%C3%A8ne>  
+- <https://www.lalutineduweb.fr/ecriture-inclusive-accessibilite-solutions/> 
+- <https://azaliz.me/francais/ecriture-inclusive.html> 
+- <https://fr.wikipedia.org/wiki/Langage_%C3%A9pic%C3%A8ne>
 
 &nbsp;
   
