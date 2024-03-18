@@ -7,7 +7,7 @@ layout: compress_json
       "title"    : "{{ post.title | escape }}",
       "category" :  "{{ post.categories | array_to_sentence_string }}",
       "url"      : "{{ site.url }}{{ site.baseurl }}{{ post.url }}",
-      "date"     : "{{ post.date | date: '%d %-B %Y' }}",
+      "date"     : "{{ post.date | localize: '%d %B %Y' }}",
       "description" : "{{ post.description | strip_newlines | strip_html | strip | escape }}",
       "content" : "{{ post.content | truncate: '300' | strip_html | strip_newlines | strip | escape }}",
       "image" : "{{post.post-image}}",

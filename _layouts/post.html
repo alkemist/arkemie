@@ -26,7 +26,7 @@ layout: microtypo
           <div class="information subtitle column is-5 has-text-left-desktop has-text-left-fullhd has-text-left-tablet has-text-center-mobile">
             <div>
               <p class="subtitle is-6 is-uppercase has-text-weight-normal has-text-black-ter">Publié le
-                <b>{{ page.date | date: "%d %-B %Y" }}</b>
+                <b>{{ page.date | localize: "%d %B %Y" }}</b>
               </p>
               {% include categories.html %}
             </div>

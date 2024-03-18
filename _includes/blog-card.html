@@ -9,7 +9,7 @@
             {{post.description | truncate: 300 | strip | strip_html | strip_newlines | escape }}
             {% endunless %}
             <hr class="has-background-grey">
-            <span class="has-text-grey">Publié le <span class="has-text-weight-semibold">{{ post.date | date: "%d %-B %Y" }}</span></span>
+            <span class="has-text-grey">Publié le <span class="has-text-weight-semibold">{{ post.date | localize: "%d %B %Y" }}</span></span>
             |
             <i class="fas fa-clock"></i>
             <span class="has-text-weight-semibold">
