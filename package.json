@@ -4,11 +4,12 @@
   "description": "A starter template for Jekyll projects with Vue.js and Vue Single File Components, complete with webpack.",
   "main": "index.js",
   "scripts": {
-    "install-all": "sudo bundle install & npm install",
-    "update-all": "sudo bundle update & npm update",
-    "jekyll": "bundle exec jekyll serve --watch --incremental",
-    "start": "cross-env NODE_ENV=development webpack --watch",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "install-all": "bundle install & npm install",
+    "update-all": "bundle update & npm update",
+    "start": "bundle exec jekyll serve --watch --incremental",
+    "build": "bundle exec jekyll build",
+    "start-js": "cross-env NODE_ENV=development webpack --watch",
+    "build-js": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "keywords": [
     "jekyll",
