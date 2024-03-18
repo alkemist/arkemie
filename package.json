@@ -8,8 +8,8 @@
     "update-all": "bundle update & npm update",
     "start": "bundle exec jekyll serve --watch --incremental",
     "build": "bundle exec jekyll build",
-    "start-js": "cross-env NODE_ENV=development webpack --watch",
-    "build-js": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "start-js": "webpack --watch",
+    "build-js": "webpack --progress --hide-modules"
   },
   "keywords": [
     "jekyll",
