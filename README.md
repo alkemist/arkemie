@@ -9,7 +9,6 @@ Projet d’écriture d’un receuil de nouvelles dans un univers steampunk rempl
 ### Site web
 
 Jekyll : Création du site web  
-Github Pages : Hebergement   
 
 ### Ecriture
 
