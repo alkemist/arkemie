@@ -11,9 +11,7 @@ categories:
  
 Un atome est constitué de protons, de neutrons et d’électrons.  
 
-<a data-fslightbox="post-image" href="/assets/images/radioactivité/modele-atomique-simplifie.jpg" data-alt="Modèle atomique simplifié">
-                    <img src="/assets/images/radioactivité/modele-atomique-simplifie.jpg" alt="Modèle atomique simplifié">
-</a>   
+{% include image.html img="radioactivité/modele-atomique-simplifie.jpg" alt="Modèle atomique simplifié" %}
   
 Un élément chimique est défini par le nombre de protons de son noyau (le numéro atomique).  
 Ils peuvent avoir différentes variantes, avec un nombre de neutrons différent, on appelle cela un isotope.  
@@ -26,9 +24,7 @@ Un atome (le carbone par exemple, numéro atomique 6, donc 6 protons) peut avoir
 La radioactivité est l’émission de rayonnements par une substance inerte  sans apport d’énergie extérieur.  
 Ces éléments radioactifs instables vont se désintégrer avec le temps et émettre des rayonnements.
 
-<a data-fslightbox="post-image" href="/assets/images/radioactivité/rayonnements.jpg" data-alt="Les différents types de rayonnements radioactifs">
-  <img src="/assets/images/radioactivité/rayonnements.jpg" alt="Les différents types de rayonnements radioactifs">
-</a>  
+{% include image.html img="radioactivité/rayonnements.jpg" alt="Les différents types de rayonnements radioactifs" %}
 
 Les rayonnements produits peuvent être de 3 types :
 
@@ -49,11 +45,9 @@ Chaque isotope radioactif met un certain temps (période radioactive) pour que l
 On ne peut pas savoir quand un atome va se désintégrer exactement, on peut juste émettre des statistiques basées sur les probabilités qu’un des atomes se désintègre dans un temps donné.  
 La décroissance de ce nombre d’atomes suit une décroissance exponentielle.  
 
-<a data-fslightbox="post-image" href="/assets/images/radioactivité/decroissance-radioactive.jpg" data-alt="Graphique de la décroissance radioactive">
-  <img src="/assets/images/radioactivité/decroissance-radioactive.jpg" alt="Graphique de la décroissance radioactive">
-</a>  
+{% include image.html img="radioactivité/decroissance-radioactive.jpg" alt="Graphique de la décroissance radioactive" %}
 
-La période radioactive d’un élément peut aller d’un temps très court (pour le Radon 220, c’est 54 secondes) à un temps très long (pour l’Uranium 238, c’est 4,5 milliards d’années).
+La période radioactive d’un élément peut aller d’un temps très court (pour le Radon 220, c’est 54 secondes) à un temps très long (pour l’Uranium 238, c’est 4,5 milliards d’années).
 
 # Chaîne de désintégration
 
@@ -63,9 +57,7 @@ Par exemple, le Thorium 232 va produire des rayonnements alpha et se transmuter 
 Qui lui même va produire des rayonnements bêta et se transmuter en Actinium 228.  
 Ainsi de suite avec divers autres éléments radioactifs, jusqu'à arriver à du Plomb 206 qui est un isotope stable.  
 
-<a data-fslightbox="post-image" href="/assets/images/radioactivité/chaine-desintegration.jpg" data-alt="Chaîne de désintégration du Thorium 232">
-  <img src="/assets/images/radioactivité/chaine-desintegration.jpg" alt="Chaîne de désintégration du Thorium 232">
-</a>  
+{% include image.html img="radioactivité/chaine-desintegration.jpg" alt="Chaîne de désintégration du Thorium 232" %}
 
 &nbsp; 
   

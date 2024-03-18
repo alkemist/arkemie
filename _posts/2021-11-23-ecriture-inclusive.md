@@ -19,7 +19,7 @@ J’ai appris par la violence des paroles de mon oncle que les garçons ne devai
 J’ai compris à cet instant que j’avais fait quelque chose de mal. J’avais bravé, sans le savoir, un interdit.  
 Une fois dans le monde professionnel j’ai fait ce que je savais faire de mieux, je me suis accolé aux normes sociales en vigueur.  
   
-Il y a 6 ans, j’ai pu commencer à déconstruire tous ces murs que j’avais construits, j’ai dans un premier temps fait sauter l’uniforme de travail.   
+Il y a 6 ans, j’ai pu commencer à déconstruire tous ces murs que j’avais construits, j’ai dans un premier temps fait sauter l’uniforme de travail.   
 Ensuite j’ai découvert l’impact néfaste des normes et stéréotypes de genre sur la société.  
 
 Et aujourd’hui, quand j’ai commencé ce projet d’écriture, je me suis demandé comment j’aurais voulu me définir.  
@@ -44,33 +44,33 @@ Dans un premier temps, l’objectif est de favoriser la reformulation via des mo
    
 Un mot épicène est un mot désignant un être animé et qui n’est pas marqué du point de vue du sexe. Il peut être employé au masculin et au féminin sans variation de forme.  
   
-> **Exemples de mots épicènes** :  
+> **Exemples de mots épicènes** :  
 > alter ego, animal, âme, créature, être, parent, personne, individu, sujet, adulte, bénévole, collègue élèvent, enfant, gosse, malade, nomade, partenaire  
   
-> **Exemples de formules englobantes** :  
+> **Exemples de formules englobantes** :  
 > L’équipe, les personnes, la clientèle, la concurrence, la direction, l’effectif, le personnel, la communauté, la foule, tout le monde  
 
-Ensuite, s’il n’existe pas d’épicène ou de forme englobante, il suffit de détailler par l’usage des 2 genres.  
+Ensuite, s’il n’existe pas d’épicène ou de forme englobante, il suffit de détailler par l’usage des 2 genres.  
 
-> **Exemples d'écritures détaillées** :   
+> **Exemples d'écritures détaillées** :   
 > les développeurs et développeuses, les intégrateurs et intégratrices, les consultants et consultantes  
   
 ## Abréviation inclusive 
   
 Si l’écriture détaillée est trop lourde, le point médian peut permettre de réduire les formulations.   
-Elle fonctionne ainsi :   
+Elle fonctionne ainsi :   
   
 `<racine du mot> <suffixe masculin> · <suffixe féminin> · <marque du pluriel>`  
   
-> **Exemples d'abréviations inclusives** :    
+> **Exemples d'abréviations inclusives** :    
 > les analystes enjoué·e·s, les élèves bienveillant·e·s
   
 ## Mots mixtes
   
-En dernier recours, il est possible d’utiliser des adjectifs, articles et pronoms qui regroupent les 2 genres en un.   
+En dernier recours, il est possible d’utiliser des adjectifs, articles et pronoms qui regroupent les 2 genres en un.   
 Certains sont plus utilisés que d’autres, le pronom mixte iel est communément utilisé et accepté.  
   
-> **Exemples de mots mixtes** :  
+> **Exemples de mots mixtes** :  
 > toustes, celleux  
 
 # Sources

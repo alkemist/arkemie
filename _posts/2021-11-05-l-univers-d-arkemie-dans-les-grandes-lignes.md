@@ -8,7 +8,7 @@ categories:
 ---
 
 
-En ce tout début de 20e siècle, plusieurs bouleversements marquèrent la société.  
+En ce tout début de 20e siècle, plusieurs bouleversements marquèrent la société.  
   
 La découverte de la radioactivité créa une toute nouvelle branche scientifique pour étudier ses propriétés.  
 Peu de temps après, on apprit que certaines substances irradiées avaient la capacité à transformer la matière et parfois même à la programmer.

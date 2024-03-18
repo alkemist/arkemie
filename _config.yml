@@ -44,10 +44,6 @@ image:
 author-name: Jaden Alkemist
 # URL for the Image of the Author
 author-image: /assets/images/avatar_bleu.png
-# 60 Words About the Author
-author-about: >
-  Développeur web freelance spécialisé Symfony et Angular.
-  Introverti hypersensible, idéaliste en quête de sens #ChildFree #TDAH #NonBinaire
 author-url: https://jaden-achain.dev
 
 # SASS
@@ -61,7 +57,6 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-multiple-languages-plugin
 
 # Permalink
 permalink: ":categories/:title/"
@@ -71,8 +66,6 @@ compress_html:
   clippings: all
 
 # I18n
-languages: ["fr"]
-exclude_from_localizations: ["javascript", "images", "css"]
 date_locale: fr
 
 # Defaults
