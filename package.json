@@ -6,10 +6,11 @@
   "scripts": {
     "install-all": "bundle install & npm install",
     "update-all": "bundle update & npm update",
-    "start": "bundle exec jekyll serve --watch --incremental",
-    "build": "bundle exec jekyll build",
+    "start-jk": "bundle exec jekyll serve --watch --incremental",
+    "build-jk": "bundle exec jekyll build",
     "start-js": "webpack --watch",
-    "build-js": "webpack --progress --hide-modules"
+    "build-js": "webpack --progress --hide-modules",
+    "build": "yarn run build-js & yarn run build-jk"
   },
   "keywords": [
     "jekyll",
