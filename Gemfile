@@ -36,3 +36,4 @@ gem "webrick", "~> 1.7"
 
 gem 'jekyll-date-localization', group: :jekyll_plugins
 gem 'jekyll-multiple-languages-plugin'
+gem 'jekyll_sort_natural', group: :jekyll_plugins
