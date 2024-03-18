@@ -4,7 +4,7 @@ layout: post
 post-image: "/assets/images/nature/path.jpg"
 description: "Comment dépasser mes difficultés pour me mettre à écrire."
 categories:   
-- Personnel
+- Écriture
 ---
 
 Ce projet est né il y a un an et après, la phase euphorique qui a duré 1 mois, où j’ai fait beaucoup de recherche et j’étais très motivée, ce fut le trou noir.  

@@ -4,7 +4,7 @@ layout: post
 post-image: "/assets/images/autre/mr-robot.webp"  
 description: Le pouvoir par le contrôle
 categories:   
-- Reflexion  
+- Personnel  
 ---
 
 Est-ce que ça vous déjà arrivé de ressentir cette sensation assez puissante de lucidité totale, comme si vous étiez un marionnettiste et que vous aviez le contrôle total de votre corps ?  

@@ -4,7 +4,7 @@ layout: post
 post-image: "/assets/images/nature/path.jpeg"  
 description: Mes réflexions autour des genres et l’impact sur ce projet.
 categories:   
-- Personnel  
+- Reflexion  
 ---
 
 # Histoire
