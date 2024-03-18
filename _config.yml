@@ -61,6 +61,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-multiple-languages-plugin
 
 # Permalink
 permalink: ":categories/:title/"
@@ -68,6 +69,11 @@ permalink: ":categories/:title/"
 # Compress
 compress_html:
   clippings: all
+
+# I18n
+languages: ["fr"]
+exclude_from_localizations: ["javascript", "images", "css"]
+date_locale: fr
 
 # Defaults
 defaults:

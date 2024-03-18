@@ -33,3 +33,6 @@ end
 gem "wdm", :install_if => Gem.win_platform?
 
 gem "webrick", "~> 1.7"
+
+gem 'jekyll-date-localization', group: :jekyll_plugins
+gem 'jekyll-multiple-languages-plugin'
