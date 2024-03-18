@@ -234,6 +234,9 @@ a.navbar-item.is-active {
     }
     #post-image {
         border-radius: 0.25rem;
+        background-size: 100%;
+        background-position:center;
+        height: 350px;
     }
     .subtitle {
         letter-spacing: 0.05rem;

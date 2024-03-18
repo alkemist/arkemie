@@ -21,10 +21,10 @@ layout: microtypo
         <hr class="has-background-black">
         <div class="columns is-variable is-5">
           <div class="column is-6">
-            <figure class="image is-16by9 has-shadow">
-                <a data-fslightbox="post-image" href="{{page.post-image}}" data-alt="{{post.title}}">
+            <figure id="post-image" class="image has-shadow" style="background-image: url({{page.post-image}});"><!--is-16by9-->
+                <!--<a data-fslightbox="post-image" href="{{page.post-image}}" data-alt="{{post.title}}">
                     <img src="{{page.post-image}}" alt="{{post.title}}">
-                </a>
+                </a>-->
             </figure>
           </div>
           <div class="information subtitle column is-5 has-text-left-desktop has-text-left-fullhd has-text-left-tablet has-text-center-mobile">
