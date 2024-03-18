@@ -10,7 +10,7 @@
     "build-jk": "bundle exec jekyll build",
     "start-js": "webpack --watch",
     "build-js": "webpack --progress --hide-modules",
-    "build": "yarn run build-js & yarn run build-jk"
+    "build": "yarn run build-js ; yarn run build-jk"
   },
   "keywords": [
     "jekyll",
