@@ -86,6 +86,10 @@ a.navbar-item.is-active {
         margin: 1.5rem auto;
     }
 
+    #results-container:not(:empty) + div {
+        display: none;
+    }
+
     #blog-card {
         transition: all 0.25s ease;
         margin-bottom: 0.5vmax;
@@ -236,7 +240,7 @@ a.navbar-item.is-active {
         border-radius: 0.25rem;
         background-size: 100%;
         background-position:center;
-        height: 350px;
+        height: 200px;
     }
     .subtitle {
         letter-spacing: 0.05rem;
