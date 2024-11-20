@@ -28,7 +28,7 @@
     "vue-cal": "^3.11.0",
     "vue-load-image": "^0.2.0",
     "vue-zoomer": "^0.3.10",
-    "vuetify": "^2.6.13"
+    "vuetify": "^2.7.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.7",
