@@ -1,13 +1,15 @@
 ---
 title: Machine Learning - Statistiques
 layout: post  
-post-image: "/assets/images/ia/network.jpg"  
+post-image: "/assets/images/ia/statistiques.jpg"  
 description: "Fiche"  
-categories:   
-- Recherche
+categories:
+  - Fiche
 ---
 
-# Variables
+# Statistiques
+
+## Types de variables
 
 - Quantitative / Quantités
   - Continue : float  
@@ -22,9 +24,9 @@ categories:
   - Date 
   - Coordonnées
 
-# Statistiques
+## Types de statistiques
 
-## Descriptives univariées (sur une seule variable) 
+### Descriptives univariées (sur une seule variable) 
 
 - Quantitative 
   - Moyenne : Valeur d'un individu pour que le total soit inchangé 
@@ -49,7 +51,7 @@ categories:
   - Mode : Modalité ou valeur la plus fréquente pour une variable donnée 
     - (groupby + max count)
 
-## Statistiques descriptives bi-variées (lien/corrélation entre 2 variables)
+### Statistiques descriptives bi-variées (lien/corrélation entre 2 variables)
 
 - 2 variables quantitatives 
   - Coéfficient de corrélation linéaire : Mesure de la relation linéaire entre deux variables

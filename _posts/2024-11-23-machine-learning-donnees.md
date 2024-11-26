@@ -1,11 +1,13 @@
 ---
 title: Machine Learning - Données
 layout: post  
-post-image: "/assets/images/ia/network.jpg"  
-description: "Fiche "  
-categories:   
-- Recherche
+post-image: "/assets/images/ia/binaries.jpg"  
+description: "Manipulation des données"  
+categories:
+  - Fiche
 ---
+
+# Manipulation des données
 
 ## Récupération des données
 
@@ -47,7 +49,7 @@ df['hour'] = pd.to_numeric(df['hour'])
 df['zone'] = df['zone'].astype(str)
 ```
 
-## Manipulation des données
+## Manipulation des types
 
 ```
 df['date'].dt

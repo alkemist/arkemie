@@ -1,15 +1,16 @@
 ---
 title: Machine Learning - Python
 layout: post  
-post-image: "/assets/images/ia/network.jpg"  
-description: "Fiche "  
+post-image: "/assets/images/ia/snake.jpg"  
+description: "Origine de ses fiches, outils utilisés et notes de python"  
 categories:   
-- Recherche
+- Fiche
 ---
 
+# Fiches
 Après ma formation de Python et Machine Learning, j'ai décidé d'utiliser ce site pour y noter quelques fiches résumés.
 
-# Outils
+## Outils
 
 Tout d'abord les différents outils utilisés
 
@@ -19,17 +20,15 @@ Tout d'abord les différents outils utilisés
 - Scikit-Learn : Permet de créer les modèles de ML
 - Pycaret : Permet de tester et de trouver le meilleur modèle
 
-# Rappels de python
+## Rappels de python
 
-## Date
+### Date
 
-```
-from datetime import datetime
-datetime.datetime.now().strftime("%m/%d/%Y %H:%M:%S")
+Import : `from datetime import datetime`  
+Formatage de date : `datetime.datetime.now().strftime("%m/%d/%Y %H:%M:%S")`  
+Intervale en secondes : `interval_seconds = interval.total_seconds()`
 
-interval_seconds = interval.total_seconds()
-```
 
-## Tableau
+### Tableau
 
 Filtrer: `tab_filtered = list(filter(lambda c: c not in ['value'], tab)) `

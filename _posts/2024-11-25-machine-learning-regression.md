@@ -1,11 +1,11 @@
 ---
 title: Machine Learning - Regression
 layout: post  
-post-image: "/assets/images/ia/network.jpg"  
+post-image: "/assets/images/ia/numbers.jpg"  
 description: "Quand on veux répondre à cette question, on fait de la régression.
 Dans un problème de régression, on prédit la variable à expliquer en fonction d'une ou plusieurs variables explicatives"  
-categories:   
-- Recherche
+categories:
+  - Fiche
 ---
 
 # Regression
