@@ -30,10 +30,12 @@ categories:
 
 ## Exemples en image
 
-Comparaison des méthodes de classification
+Comparaison des méthodes de classification  
+
 {% include image.html img="ia/classifier_comparison.png" alt="Classifier comparison" %}
 
-Comparaison des méthodes de clustering
+Comparaison des méthodes de clustering  
+
 {% include image.html img="ia/cluster_comparison.png" alt="Cluster comparison" %}
 
 ## Types de données

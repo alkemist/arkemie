@@ -271,12 +271,17 @@ a.navbar-item.is-active {
         }
         img, iframe {
             max-width: calc(100% - 25vw);
+
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+
             @media (max-width: 768px) {
                 max-width: calc(100% - 5vw);
             }
         }
         center img {
-            margin: 0.25rem auto;
+            margin-left: auto;
+            margin-right: auto;
         }
         blockquote {
             display: block;
