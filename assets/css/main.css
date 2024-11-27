@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css");
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth !important;
+  transition: all 0.25s ease;
+  background: black;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.5vmax !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #363636 !important;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: black !important;
+}
+
+::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
+#navbar .navbar-burger span:nth-child(2) {
+  left: 50%;
+  width: 8px;
+}
+
+.tag {
+  margin: 0.15rem auto;
+  text-decoration: none !important;
+}
+.tag:hover {
+  background-color: #505050 !important;
+  color: #3273dc;
+  text-decoration: none !important;
+}
+
+.is-active {
+  font-weight: bold;
+}
+
+.columns .button {
+  margin: 0.5rem !important;
+}
+
+hr {
+  margin: 1rem auto;
+  height: 1px;
+}
+
+.column {
+  margin: auto 0.5rem;
+  padding: 0.5rem;
+}
+
+#post .subtitle {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+#post .column {
+  margin: 0 0.5rem;
+}
+#post #description {
+  margin: 1rem 0 0 0;
+}
+#post .information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+#footer .column {
+  margin: 0 0.5rem auto;
+}
+
+.searchResult a .title {
+  text-decoration: underline;
+}
+
+.vue-load-image, .vue-load-image > div {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a[data-fslightbox] {
+  display: flex;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -34,6 +34,9 @@ a.navbar-item.is-active {
     border-color: grey;
 }
 
+.hero {
+    background: #F4F5F6;
+}
 
 #hero {
     background: rgb(0, 0, 0);
@@ -44,7 +47,7 @@ a.navbar-item.is-active {
 
     &::before {
         //filter: blur(0.15rem);
-        background-image: url({{site.heroimage}});
+        background-image: url(/assets/images/alchimie/cercle-alchimique.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -76,8 +79,6 @@ a.navbar-item.is-active {
 }
 
 #blog {
-    background: #F4F5F6;
-
     .hero-body {
         padding: 3rem 1rem 1rem 1rem;
     }

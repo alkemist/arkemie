@@ -2,7 +2,7 @@
 title: Machine Learning - Statistiques
 layout: post  
 post-image: "/assets/images/ia/statistiques.jpg"  
-description: "Fiche"  
+description: "Types de variables et de statistiques"  
 categories:
   - Fiche
 ---
