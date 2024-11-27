@@ -2,8 +2,7 @@
 title: Machine Learning - Classification
 layout: post  
 post-image: "/assets/images/ia/cubes.png"  
-description: "Quand on veux répondre à cette question, on fait de la classification.
-Dans un problème de classification, on prédit une classe en fonction d'une ou plusieurs variables explicatives"  
+description: "Dans un problème de classification, on prédit une classe en fonction d'une ou plusieurs variables explicatives"  
 categories:
   - Fiche
 ---

@@ -29,7 +29,7 @@ Sur le pourquoi je ne veux pas d’enfant j’ai fait un témoignage sur le site
 
 C’est là tout l’objectif de cette article, expliquer toutes les démarches par laquelle je suis passé.  
 
-# Etapes 
+# Étapes 
 
 ## Première étape : L’inspiration
 
