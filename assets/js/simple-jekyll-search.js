@@ -67,9 +67,12 @@ var _$fuzzysearch_1 = fuzzysearch;
 var _$FuzzySearchStrategy_5 = new FuzzySearchStrategy()
 
 function FuzzySearchStrategy () {
-  this.matches = function (string, crit) {
-    console.log(string, crit);
-    return _$fuzzysearch_1(crit.toLowerCase(), string.toLowerCase())
+  this.matches = function (string, query) {
+    console.log('FuzzySearchStrategy', string, query);
+    return _$fuzzysearch_1(
+        query.toLowerCase().normalize('NFD').replace(/\p{Diacritic}/gu, ''),
+        string.toLowerCase().normalize('NFD').replace(/\p{Diacritic}/gu, '')
+    )
   }
 }
 
@@ -78,15 +81,15 @@ function FuzzySearchStrategy () {
 var _$LiteralSearchStrategy_6 = new LiteralSearchStrategy()
 
 function LiteralSearchStrategy () {
-  this.matches = function (str, crit) {
+  this.matches = function (str, query) {
     if (!str) return false
 
-    str = str.trim().toLowerCase()
-    crit = crit.trim().toLowerCase()
+    str = str.trim().toLowerCase().normalize('NFD').replace(/\p{Diacritic}/gu, '')
+    query = query.trim().toLowerCase().normalize('NFD').replace(/\p{Diacritic}/gu, '')
 
-    return crit.split(' ').filter(function (word) {
+    return query.split(' ').filter(function (word) {
       return str.indexOf(word) >= 0
-    }).length === crit.split(' ').length
+    }).length === query.split(' ').length
   }
 }
 
@@ -170,10 +173,10 @@ function __setOptions_4 (_opt) {
   opt.exclude = _opt.exclude || []
 }
 
-function findMatches (data, crit, strategy, opt) {
+function findMatches (data, query, strategy, opt) {
   const matches = []
   for (let i = 0; i < data.length && matches.length < opt.limit; i++) {
-    const match = findMatchesInObject(data[i], crit, strategy, opt)
+    const match = findMatchesInObject(data[i], query, strategy, opt)
     if (match) {
       matches.push(match)
     }
@@ -181,9 +184,10 @@ function findMatches (data, crit, strategy, opt) {
   return matches
 }
 
-function findMatchesInObject (obj, crit, strategy, opt) {
+function findMatchesInObject (obj, query, strategy, opt) {
   for (const key in obj) {
-    if (!isExcluded(obj[key], opt.exclude) && strategy.matches(obj[key], crit)) {
+    console.log("findMatchesInObject", key, obj[key]);
+    if (!isExcluded(obj[key], opt.exclude) && strategy.matches(obj[key], query)) {
       return obj
     }
   }
@@ -395,7 +399,9 @@ var _$src_8 = {};
     options.searchInput.addEventListener('input', function (e) {
       if (isWhitelistedKey(e.which)) {
         emptyResultsContainer()
-        debounce(function () { search(e.target.value) }, options.debounceTime)
+        debounce(function () { search(
+            e.target.value.normalize('NFD').replace(/\p{Diacritic}/gu, '')
+        ) }, options.debounceTime)
       }
     })
   }

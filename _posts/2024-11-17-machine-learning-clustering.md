@@ -1,8 +1,8 @@
 ---
 title: Machine Learning - Clustering
 layout: post  
-post-image: "/assets/images/ia/model.jpg"  
-description: "Dans un problème de clustering, on veux déterminer les classes pour ranger les données"  
+post-image: "/assets/images/ia/glasses.jpg"  
+description: "Dans un problème de clustering, on veux déterminer les classes pour catégoriser les données"  
 categories:
   - Fiche
 ---
@@ -12,7 +12,7 @@ categories:
 ## Quelles sont les classes ?
 
 Quand on veux répondre à cette question, on fait du clustering.
-Dans un problème de clustering, on veux déterminer les classes pour ranger les données.
+Dans un problème de clustering, on veux déterminer les classes pour catégoriser les données.
 
 ## Préparation des données
 
