@@ -34,6 +34,15 @@ Exemples :
 - Isomap
 - Locally linear embedding
 
+Ce code permet de réduire le nombre de colonne à 2 (d1 et d2)
+```
+from sklearn.manifold import TSNE
+
+X_emb = TSNE(n_components=2).fit_transform(X)
+X_emb = pd.DataFrame(X_emb, columns=['d1', 'd2'], index=X.index)
+X_emb
+```
+
 ## Algorithmes
 
 ### K-Means
@@ -55,8 +64,12 @@ kmeans = KMeans(
 ### DBSCAN
 
 Paramètres :
-- epsilon : rayon de la zone
+- eps : rayon de la zone
 - min_sample : nombre de points minimum pour définir un cluster
+- metric : métrique pour les distances
+  - 'euclidean' par défaut
+  - Autres :
+    - ‘haversine’
 
 ```
 from sklearn.cluster import DBSCAN
@@ -65,6 +78,25 @@ clusering = DBSCAN(
   eps=3,
   min_samples=2
 ).fit(array)
+```
+
+### Gaussian mixture
+
+``` 
+from sklearn.mixture import GaussianMixture
+```
+
+### OPTICS
+
+- max_eps : rayon de la zone
+- min_sample : nombre de points minimum pour définir un cluster
+- metric : métrique pour les distances
+    - 'minkowski' par défaut
+    - Autres :
+        - ‘cityblock’, ‘cosine’, ‘euclidean’, ‘l1’, ‘l2’, ‘manhattan’
+
+```
+from sklearn.cluster import OPTICS
 ```
 
 ## Étapes

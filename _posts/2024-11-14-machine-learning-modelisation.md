@@ -51,8 +51,14 @@ Comparaison des méthodes de clustering
 
 ### Dummification
 Transformer une colonne ayant des modalités textuelles en entier
-- Transformer chaque modalité en colonne booléenne (estFrance, estEspagne, ....)
-- Transformer chaque modalité en entier (France = 0, Espagne = 1, 2, ...)
+
+#### One-hot encoding
+Transformer chaque modalité en colonne booléenne (estFrance, estEspagne, ....)
+
+`encoded_df = pd.get_dummies(df, columns=['Animal'])`
+
+#### Label encoding
+Transformer chaque modalité en entier (France = 0, Espagne = 1, 2, ...)
 
 ### Normalization
 Mettre toutes les features sur une même echelle de valeur

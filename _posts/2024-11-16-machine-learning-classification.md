@@ -164,10 +164,10 @@ dataset_train, dataset_test = train_test_split(
 ### Comparaisons
 
 On lance la comparaison des différents algorithmes
-`best_model = compare_models(exclude=[])`
+`model = compare_models(exclude=[])`
 
 ### Optimisations des hyper-paramètres
-`best_model_tuned = tune_model(best_model)`
+`best_model_tuned = tune_model(model)`
 
 ### Combinaisons de plusieurs modèles
 `top_5_models = compare_models(n_select=5, exclude=['xgboost', 'catboost'])`
@@ -191,7 +191,7 @@ Le rappel est la proportion de tests qui ont été retourné positifs parmi l'en
 
 `recall = VP / (VP + FN)`
 
-### ROC
+### ROC / AUC
 
 La courbe ROC permet de comparer différents algorithmes en faisant varier leur seuil de détection
 Le modèle avec la plus grand aire sous la courbe est le meilleur modèle
