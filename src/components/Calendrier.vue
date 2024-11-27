@@ -80,6 +80,7 @@ export default {
     left: 1px;
     right: 1px;
     background-color: rgba(76, 172, 175, 0.35);
+    cursor: pointer;
   }
   .vuecal--short-events .vuecal__event-title{
     white-space: normal;

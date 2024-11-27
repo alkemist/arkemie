@@ -6,7 +6,7 @@
 
 {%- unless categories.size == 0 -%}
 <p class="subtitle is-uppercase post-categories">
-    <a href="{{site.baseurl}}/archives"><i class="fas fa-tags"></i></a>
+    <a href="{{site.baseurl}}/archives"><i class="fa fa-tags"></i></a>
 
     {% for category in categories %}
       <a class="tag is-link" href="{{site.baseurl}}/archives/#{{category|slugize}}">{{category}}</a>

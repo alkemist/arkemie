@@ -14,6 +14,12 @@
     left: auto;
 }
 
+.navbar-end {
+    .navbar-item, .navbar-link {
+        color: #F4F5F6;
+    }
+}
+
 a.navbar-item:hover,
 .navbar-link:hover {
     background-color: rgba($color: #fff, $alpha: 0.25) !important;
@@ -265,13 +271,12 @@ a.navbar-item.is-active {
         }
         img, iframe {
             max-width: calc(100% - 25vw);
-            margin: 0.25rem auto;
             @media (max-width: 768px) {
                 max-width: calc(100% - 5vw);
             }
         }
-        ul, ol {
-            display: inline-block;
+        center img {
+            margin: 0.25rem auto;
         }
         blockquote {
             display: block;
