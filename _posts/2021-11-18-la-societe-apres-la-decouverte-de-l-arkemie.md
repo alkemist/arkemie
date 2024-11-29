@@ -3,8 +3,9 @@ title: La société après la découverte de l'arkemie
 layout: post  
 post-image: "/assets/images/nature/rain.jpeg"  
 description: Impact de l’Arkemie dans la société et dans ses diverses composantes.
-categories:   
-- Construction  
+categories:
+- Écriture
+- Univers  
 ---
 
 Dans les sciences, la découverte des radiations permet de mettre en lumière une nouvelle propriété de certaines matières, la radioactivité.
