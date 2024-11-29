@@ -1,5 +1,5 @@
 ---
-layout: categories
+layout: archives
 title: Archives
 ---
 
