@@ -57,6 +57,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-date-localization
 
 # Permalink
 permalink: ":categories/:title/"
@@ -66,7 +67,10 @@ compress_html:
   clippings: all
 
 # I18n
-date_locale: fr
+date_locale: "fr"
+
+locales: ["fr"]
+locale: "fr"
 
 # Defaults
 defaults:
