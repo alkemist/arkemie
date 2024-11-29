@@ -28,7 +28,7 @@ layout: microtypo
               <p class="subtitle is-6 is-uppercase has-text-weight-normal has-text-black-ter">Publié le
                 <b>{{ page.date | localize: "%d %B %Y" }}</b>
               </p>
-
+              {% include categories.html %}
             </div>
             <div>
               {% unless page.description.size == 0 %}

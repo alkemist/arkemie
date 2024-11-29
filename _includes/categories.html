@@ -1,7 +1,11 @@
 {% if post %}
-  {% assign categories = post.categories | sort_natural  %}
+  {% assign categories = post.categories  %}
+{% elsif category %}
+  {% assign categories = post.categories  %}
+{% elsif page %}
+  {% assign categories = page.categories  %}
 {% else %}
-  {% assign categories = page.categories | sort_natural  %}
+  {% assign categories = "" | split: ","  %}
 {% endif %}
 
 {% assign linked_categories = "Personnel,Fiche,Reflexion,Recherche,Écriture" | split: "," %}
@@ -11,7 +15,7 @@
     <a href="{{site.baseurl}}/archives"><i class="fa fa-tags"></i></a>
 
     {% for category in categories %}
-      {% if ignore_categories contains category %}
+      {% if linked_categories contains category %}
         <a class="tag is-link" href="{{site.baseurl}}/{{category|slugize}}">{{category}}</a>
       {% else %}
         <a class="tag is-link" href="{{site.baseurl}}/archives/#{{category|slugize}}">{{category}}</a>
