@@ -1,14 +1,12 @@
 {% if post %}
   {% assign categories = post.categories  %}
-{% elsif category %}
-  {% assign categories = post.categories  %}
 {% elsif page %}
   {% assign categories = page.categories  %}
 {% else %}
   {% assign categories = "" | split: ","  %}
 {% endif %}
 
-{% assign linked_categories = "Personnel,Fiche,Reflexion,Recherche,Écriture" | split: "," %}
+{% assign linked_categories = "Personnel,Fiche,Réflexion,Recherche,Écriture" | split: "," %}
 
 {%- unless categories.size == 0 -%}
 <p class="subtitle is-uppercase post-categories">
@@ -16,9 +14,9 @@
 
     {% for category in categories %}
       {% if linked_categories contains category %}
-        <a class="tag is-link" href="{{site.baseurl}}/{{category|slugize}}">{{category}}</a>
+        <a class="tag is-link" href="{{site.baseurl}}/{{category|slugify: 'latin'}}">{{category}}</a>
       {% else %}
-        <a class="tag is-link" href="{{site.baseurl}}/archives/#{{category|slugize}}">{{category}}</a>
+        <span class="tag is-link">{{category}}</span>
       {% endif %}
       {% unless forloop.last %}&nbsp;{% endunless %}
     {% endfor %}

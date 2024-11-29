@@ -3,7 +3,7 @@
 
         <!-- logo or branding image on left side -->
         <div class="navbar-brand">
-            <a class="navbar-item"
+            <a class="navbar-item {% if page.layout == 'default' %}is-active{% endif %}"
                 href="{% if page.layout == 'default' %}{{site.url}}{{site.baseurl}}/#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">
                 <strong>{{site.title}}</strong>
             </a>
@@ -24,10 +24,9 @@
                 <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/carte-lyon">Carte de Lyon</a>
                 <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/dictionnaire">Dictionnaire</a>
                 <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/calendrier">Calendrier</a>
-                <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/archives">Archives</a>
+                <a class="navbar-item {% if page.layout == 'archives' %}is-active{% endif %}" href="{{site.url}}{{site.baseurl}}/archives">Archives</a>
                 <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/feed" target="_blank">Flux RSS</a>
             </div>
-
         </div>
     </div>
 </nav>

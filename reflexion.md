@@ -1,6 +1,6 @@
 ---
 layout: category
-category: 'Reflexion'
-title: Reflexion
+category: 'Réflexion'
+title: Réflexion
 ---
 

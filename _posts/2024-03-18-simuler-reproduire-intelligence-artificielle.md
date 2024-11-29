@@ -4,7 +4,7 @@ layout: post
 post-image: "/assets/images/ia/network.jpg"  
 description: "Simuler et reproduire quand on parle d'intelligence artificielle."  
 categories:   
-- Reflexion
+- Réflexion
 ---
 
 ## Le film HER
