@@ -44,6 +44,11 @@ a.navbar-item.is-active {
     background: #F4F5F6;
 }
 
+pre.highlight{
+    background: rgba(48,92,222, 0.2);
+    margin-bottom: 15px;
+}
+
 #hero {
     background: rgb(0, 0, 0);
     background: -moz-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.75) 100%);
@@ -91,6 +96,7 @@ a.navbar-item.is-active {
 
     .container {
         margin: 1.5rem auto;
+        width: 100%;
     }
 
     #results-container:not(:empty) + div {
@@ -292,6 +298,7 @@ a.navbar-item.is-active {
         margin: 2.5rem auto;
         word-break: break-word;
         max-width: -webkit-fill-available;
+        width: 100%;
     }
 
     #disqus_thread {

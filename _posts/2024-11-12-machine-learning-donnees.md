@@ -11,31 +11,7 @@ categories:
 
 ## Récupération des données
 
-Les données peuvent être récupéré par json `df = pd.read_csv('data.csv')`  
-
-Ou par des requètes d'api
-
-```
-import requests
-
-response = requests.get('', params={}, headers={'Authorization': '', 'Content-Type': 'application/json'})
-
-if response.status_code == 200:
-  json = response.json()
-  binary = response.text
-```
-
-## Manipulation de fichiers
-
-```
-import os
-
-if os.path.exists(file_path):
-  file.write('')
-  
-df.to_csv('data.csv', index=False)
-```
-
+Les données peuvent être récupéré par json `df = pd.read_csv('data.csv')`
 
 ## Typage des données
 
@@ -81,20 +57,70 @@ Les 2 en même temps :
 
 Tri des colonnes : `df_sorted = df[sorted(df.columns)]`
 
-## Opérations sur les données
+Selection aléatoire d'un nombre de lignes : `df_sample = df.sample(100)`  
+Selection aléatoire d'une portion: `f_sample = df.sample(frac=0.1)`  
 
-Group by : `df_grouped = df.groupby(['col1', 'col2]).mean()`  
-Merge : `df_mergd = pd.merge(df1, df2, left_on="id", right_on="id", how="left")`  
+Valeur null : `df_filtered = df['col1'].isnull()`  
+Valeur non null : `df_filtered = df['col1'].notnull()`
 
+Where : 
+```
+df['result'] = np.where(
+    df['condition'], 
+    df['true'], 
+    df['false']
+)
+```  
+
+## Transformation des données 
+
+Group by : `df_grouped = df.groupby(['col1', 'col2]).mean()`
+
+Grouper par une partie d'une date : 
+```
+df_grouped = df.set_index('datetime')\
+    .resample('D')\
+    .median()\
+    .reset_index()
+```
+
+Merge : 
+```
+df_mergd = pd.merge(
+    df1, 
+    df2, 
+    left_on="id", 
+    right_on="id", 
+    how="left"
+)
+```
+  
 Pivot (regroupe un tableau par une caractéristique et applique une fonction sur les valeurs) : 
-`
-df_pivot = pd.pivot_table(df, values=['col2', 'col3'], index = ['col1'], aggfunc="mean",)
-`  
+```
+df_pivot = pd.pivot_table(
+    df, 
+    values=['col2', 'col3'], 
+    index = ['col1'], 
+    aggfunc="mean"
+)
+```
 
 Melt (aplati un tableau, et donne une ligne pour chaque index/colonne avec l'index, la colonne et la valeur) :
-`df_melt = pd.melt(df, id_vars=['date'], value_vars=['T'],value_name="mean_temp")`
+```
+df_melt = pd.melt(
+    df, 
+    id_vars=['date'], 
+    value_vars=['T'],
+    value_name="mean_temp"
+   )
+```
 
-Grouper par une partie d'une date : `df_grouped = df.set_index('datetime').resample('D').median().reset_index()`
+## Changer l'affichage des données
+
+Trier par l'index : `df.sort_index()`  
+Trier par des colonnes : `df.sort_values(by=['col1', 'col2'])`  
+
+Changer l'index : `df.index = df['date'].values`  
 
 ## Création de dataframe
 

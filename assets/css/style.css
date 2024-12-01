@@ -147,6 +147,11 @@ a.navbar-item.is-active:hover {
   background: #F4F5F6;
 }
 
+pre.highlight {
+  background: rgba(48, 92, 222, 0.2);
+  margin-bottom: 15px;
+}
+
 #hero {
   background: rgb(0, 0, 0);
   background: -moz-linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 100%);
@@ -192,6 +197,7 @@ a.navbar-item.is-active:hover {
 }
 #blog .container {
   margin: 1.5rem auto;
+  width: 100%;
 }
 #blog #results-container:not(:empty) + div {
   display: none;
@@ -363,6 +369,7 @@ a.navbar-item.is-active:hover {
   margin: 2.5rem auto;
   word-break: break-word;
   max-width: -webkit-fill-available;
+  width: 100%;
 }
 #post #disqus_thread {
   margin-top: 5vmax;

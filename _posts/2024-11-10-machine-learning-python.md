@@ -24,11 +24,83 @@ Tout d'abord les différents outils utilisés
 
 ### Date
 
-Import : `from datetime import datetime`  
-Formatage de date : `datetime.datetime.now().strftime("%m/%d/%Y %H:%M:%S")`  
+`from datetime import datetime`  
+
+Formatage de date : `datetime.now().strftime("%m/%d/%Y %H:%M:%S")`  
 Intervale en secondes : `interval_seconds = interval.total_seconds()`
 
+### Lambda
 
-### Tableau
+Map : `array = [r for r in tab]`   
+Filtrer: 
+```
+tab_filtered = list(
+        filter(
+            lambda c: c not in ['value'], 
+            tab
+        )
+    ) 
+```  
 
-Filtrer: `tab_filtered = list(filter(lambda c: c not in ['value'], tab)) `
+### Manipulation de fichiers
+
+```
+import os
+
+if os.path.exists(file_path):
+  file.write('')
+  
+df.to_csv('data.csv', index=False)
+```
+
+### Requètes d'API
+
+```
+import requests
+
+response = requests.get(
+    '', 
+    params={}, 
+    headers={
+        'Authorization': '', 
+        'Content-Type': 'application/json'
+        }
+)
+
+if response.status_code == 200:
+  json = response.json()
+  binary = response.text
+```
+
+## Jupyter
+
+### Virtual environment
+
+Créer un env dans une version spécifique de python :   
+`python3.10 -m venv .venv-3-10`    
+Activer un environnement :  
+`. .venv-3-10/bin/activate`
+
+
+### Kernel 
+
+Créer un kernel :  
+```
+.venv-3-10/bin/activate
+
+pip install ipykernel
+python -m ipykernel install --name 3-10 --display-name "Python 3.10" --user
+```
+
+L
+
+### Packages
+
+```
+.venv-3-10/bin/activate
+
+pip install jupyterlab ipympl pandas scikit-learn plotly ipywidgets seaborn pycaret
+jupyter labextension install @jupyter-widgets/jupyterlab-manager
+jupyter labextension install jupyter-matplotlib
+```
+``    

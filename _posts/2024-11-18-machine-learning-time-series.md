@@ -2,7 +2,7 @@
 title: Machine Learning - Time series
 layout: post  
 post-image: "/assets/images/ia/time.jpg"  
-description: ""  
+description: "Modèle de Time Series"  
 categories:
   - Fiche
 ---
@@ -12,22 +12,24 @@ categories:
 ## Classique
 
 ```
-from sktime.forecasting.model_selection import temporal_train_split
+from sktime.forecasting.model_selection import temporal_train_test_split
 
 df['date'] = pd.to_datetime(df['date'])
 df.index = df['date'].values
-df.index = df.index.to_period()
+df.index = df.index.to_period('M') # D / M / W / W-MON
 
-df_train, df_test = temporal_train_test_split(df, test_size=12)
+# test_size = dernière nombre de step, ex: derniers 12 mois / dernières 52 semaines, ...
+df_train, df_test = temporal_train_test_split(df, test_size=12) 
 ```
 
 ### Modèle saisonnier naif
 
-Répercute la dernière période pour prédire le futur
-```
-from sktime.forecasting.naive import NativeForecaster
+Modèle le plus simple, répercute la dernière période pour prédire le futur
 
-forecaster = NaiveForecaster(sp=12) # saisonnalité : 12 mois dans un an
+```
+from sktime.forecasting.naive import NaiveForecaster
+
+forecaster = NaiveForecaster(sp=12) # saisonnalité : 12 mois dans un an ou 52 si en semaine
 ```
 
 ### Holt-Winters / Lissage exponentiel
@@ -40,9 +42,11 @@ Prend en compte :
 Ne prend pas en compte les jours fériés
 
 ```
-from sktime.forecasting.naive import ExponentialSmoothing
+from sktime.forecasting.exp_smoothing import ExponentialSmoothing
 
 forecaster = ExponentialSmoothing(trend="add", seasonal="add")
+# trend : tendance sur toutes les données
+# seasonal : tendance sur un cycle (12 mois / 52 semaines / ...)
 ```
 
 ### ARIMA
@@ -70,18 +74,33 @@ y_pred = forecaster.predict(fh=horizon)
 ### Métriques
 
 ```
-from sktime.perforemance_metrics.forecasting import mean_absolute_error, mean_absolute_percentage_error, mean_absolute_scaled_error
+from sktime.performance_metrics.forecasting import mean_absolute_error, mean_absolute_percentage_error, mean_absolute_scaled_error
 
-MSE = mean_absolute_error(y_true=y_true, y_pred=y_pred)
-MAPE = mean_absolute_percentage_error(y_true=y_true, y_pred=y_pred, symetric=False)
-SMAPE = mean_absolute_percentage_error(y_true=y_true, y_pred=y_pred, symetric=True)
+MAE = mean_absolute_error(y_true=y_true, y_pred=y_pred)
+MAPE = mean_absolute_percentage_error(y_true=y_true, y_pred=y_pred, symmetric=False)
+sMAPE = mean_absolute_percentage_error(y_true=y_true, y_pred=y_pred, symmetric=True)
 MASE = mean_absolute_scaled_error(y_true=y_true, y_pred=y_pred, y_train=y_train)
 ```
 
-Mean absolute error, MAE
-
-- Symmetric mean percentage error, SMAPE
+- Mean absolute error, MAE (à réduire)
+  - Equivalent à l'erreur de prédiction de **y**
+- Mean absolute percentage error, MAPE (à réduire)
+  - Equivalent à l'erreur de prédiction de **y** en pourcentage
+  - Avantages
+    - Permet de detecter des outliers
+  - Inconvénient
+    - Ne marche pas avec des valeurs proche de zero
+- Symmetric mean percentage error, sMAPE-
+  - Equivalent à l'erreur de prédiction de **y** en pourcentage
+  - Avantages
+    - Moins sensible aux valeurs proches de zéro, car il utilise la moyenne des valeurs réelles et prédites dans le dénominateur.
+    - Pénalise de manière équilibrée les sous-estimations et les surestimations.
+  - Inconvénient
+    - Peut être difficile à interpréter directement si les prédictions sont parfois très éloignées des valeurs réelles.
 - Mean absolute scaled error, MASE
+  - MASE = 1 : même chose qu'un modèle naif
+  - 0 < MASE < 1 : meilleur qu'un modèle naif
+  - MASE > 1 : moins performant qu'un modèle naif
 
 ## Prophet / Silverkite / Greykite
 
