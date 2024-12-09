@@ -9,6 +9,8 @@ categories:
 
 # Time series
 
+Pour prédire sur un cycle (annuel par exemple), il faut au moins 3 cycles, 2 pour du test et 1 pour de la validation
+
 ## Classique
 
 ```

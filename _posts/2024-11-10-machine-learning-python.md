@@ -29,7 +29,7 @@ Tout d'abord les différents outils utilisés
 Formatage de date : `datetime.now().strftime("%m/%d/%Y %H:%M:%S")`  
 Intervale en secondes : `interval_seconds = interval.total_seconds()`
 
-### Lambda
+### Tableau
 
 Map : `array = [r for r in tab]`   
 Filtrer: 
@@ -41,6 +41,12 @@ tab_filtered = list(
         )
     ) 
 ```  
+
+All : `all(x > 0 for x in array)`  
+All numpy : `(np.array([1, 2, 3, 4, 5]) > 0).all()`  
+
+Any : `any(x > 0 for x in array)`  
+Any numpy : `(np.array([1, 2, 3, 4, 5]) > 0).any()`  
 
 ### Manipulation de fichiers
 
@@ -76,20 +82,19 @@ if response.status_code == 200:
 
 ### Virtual environment
 
-Créer un env dans une version spécifique de python :   
-`python3.10 -m venv .venv-3-10`    
-Activer un environnement :  
-`. .venv-3-10/bin/activate`
+Créer un env dans une version spécifique de python : `pyenv install 3.10`    
+Activer un environnement : `pyenv activate 3.10`
+Mettre un environnement par défaut : `pyenv global 3.10`  
 
 
 ### Kernel 
 
 Créer un kernel :  
 ```
-.venv-3-10/bin/activate
+pyenv activate 3.10
 
 pip install ipykernel
-python -m ipykernel install --name 3-10 --display-name "Python 3.10" --user
+python -m ipykernel install --name 3.10 --display-name "Python 3.10" --user
 ```
 
 L
@@ -97,7 +102,7 @@ L
 ### Packages
 
 ```
-.venv-3-10/bin/activate
+pyenv activate 3.10
 
 pip install jupyterlab ipympl pandas scikit-learn plotly ipywidgets seaborn pycaret
 jupyter labextension install @jupyter-widgets/jupyterlab-manager
