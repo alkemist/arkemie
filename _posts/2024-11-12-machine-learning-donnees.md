@@ -46,6 +46,8 @@ for i in df.index:
     df['date'][i] + pd.Timedelta(hours=1)
 ```
 
+Valeurs : `df['column'].values`  
+
 ## Filtrage des données
 
 Projections (filtre sur colonnes) : `df_filterd = df[ ['col1', 'col2'] ]`  
@@ -72,9 +74,15 @@ df['result'] = np.where(
 )
 ```  
 
+Suppression des duplicats `df.drop_duplicates(subset=['col1', 'col2'], keep='last')`  
+
 ## Transformation des données 
 
-Group by : `df_grouped = df.groupby(['col1', 'col2]).mean()`
+Remplissage des données null `df['column'].fillna(df['other_column'])`  
+
+Ajouter / Supprimer du temps : `df['col_date'] + pd.Timedelta(hours=1)`  
+
+Group by : `df_grouped = df.groupby(['col1', 'col2]).mean()`  
 
 Grouper par une partie d'une date : 
 ```

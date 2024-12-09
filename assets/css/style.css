@@ -147,8 +147,12 @@ a.navbar-item.is-active:hover {
   background: #F4F5F6;
 }
 
-pre.highlight {
+pre.highlight, p > code {
   background: rgba(48, 92, 222, 0.2);
+  color: #4a4a4a;
+}
+
+pre.highlight {
   margin-bottom: 15px;
 }
 

@@ -62,3 +62,6 @@ Transformer chaque modalité en entier (France = 0, Espagne = 1, 2, ...)
 
 ### Normalization
 Mettre toutes les features sur une même echelle de valeur
+
+`from sklearn.preprocessing import LabelEncoder, OneHotEncoder, StandardScaler`  
+`StandardScaler().fit_transform(data)`  
