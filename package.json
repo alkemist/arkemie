@@ -20,7 +20,7 @@
   "author": "Christopher Murphy",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.24.0",
+    "axios": "^0.28.1",
     "fslightbox": "^3.3.1",
     "sass": "^1.57.1",
     "simple-jekyll-search": "^1.10.0",
