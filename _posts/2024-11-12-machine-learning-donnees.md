@@ -9,9 +9,11 @@ categories:
 
 # Manipulation des données
 
-## Récupération des données
+## Fichiers
 
 Les données peuvent être récupéré par json `df = pd.read_csv('data.csv')`
+
+Et enregistrer avec : `df.to_csv('data.csv', index=False, header=True)`  
 
 ## Typage des données
 
@@ -30,11 +32,6 @@ df['zone'] = df['zone'].astype(str)
 ```
 df['date'].dt
 df['str'].str
-df['cat'].cat
-df['plot'].plot
-df['sparse'].sparse
-df['struct'].struct
-df['list'].list
 ```
 
 ## Parcourir les données
@@ -42,11 +39,11 @@ df['list'].list
 ```
 for i in df.index:
     value = df['column'][i]
-    
-    df['date'][i] + pd.Timedelta(hours=1)
 ```
 
 Valeurs : `df['column'].values`  
+
+Colonnes : `df.columns`  
 
 ## Filtrage des données
 
@@ -60,10 +57,11 @@ Les 2 en même temps :
 Tri des colonnes : `df_sorted = df[sorted(df.columns)]`
 
 Selection aléatoire d'un nombre de lignes : `df_sample = df.sample(100)`  
-Selection aléatoire d'une portion: `f_sample = df.sample(frac=0.1)`  
+Selection aléatoire d'une portion: `df_sample = df.sample(frac=0.1)`  
 
 Valeur null : `df_filtered = df['col1'].isnull()`  
 Valeur non null : `df_filtered = df['col1'].notnull()`
+Valeur non NA : `pd.notna(value)`
 
 Where : 
 ```
@@ -76,21 +74,58 @@ df['result'] = np.where(
 
 Suppression des duplicats `df.drop_duplicates(subset=['col1', 'col2'], keep='last')`  
 
-## Transformation des données 
+Valeurs unique : `df['col1'].unique()`
+
+## Transformations par colonnes
+
+Applique une fonction à une colonne : `df['col2'] = df['col1'].apply(my_function)`  
+Ou `df['col2'] = df['col1'].apply(lambda x: my_function(x))`
 
 Remplissage des données null `df['column'].fillna(df['other_column'])`  
 
 Ajouter / Supprimer du temps : `df['col_date'] + pd.Timedelta(hours=1)`  
 
-Group by : `df_grouped = df.groupby(['col1', 'col2]).mean()`  
+Verifier si une colonne contient une regex : `df['col2'] = df['col1'].str.contains('hello') == True`  
+Même chose pour un ensemble de regex
+``` 
+df['col2'] = df['col1'].apply(
+    lambda x: any(
+        test in [
+            'test 1',
+            'test 2',
+        ] 
+        for test in x.split('|')
+    ) if pd.notna(x) else False
+)
+```
+
+Modifier une partie des données :  
+`df.loc[condition, 'col1'] = ...`
+
+## Changer l'affichage des données
+
+Trier par l'index : `df.sort_index()`  
+Trier par des colonnes : `df.sort_values(by=['col1', 'col2'], ascending=[True, False])`
+
+Changer l'index : `df.index = df['date'].values`
+
+## Transformations globales
 
 Grouper par une partie d'une date : 
 ```
-df_grouped = df.set_index('datetime')\
-    .resample('D')\
-    .median()\
-    .reset_index()
+df_grouped = df\
+    .set_index('datetime')\ # Change l'index
+    
+    .groupby(['col1', 'col2])\ # Groupe par colonne
+    .resample('D')\ # Groupe par jour
+    
+    .median()\ # pour calculer la médiane par groupe
+    .size()\ # pour calculer le nombre d'élements par groupe
+    
+    .reset_index(name='annonces') # Renomme la colonne calculé
 ```
+
+Suppression de colonnes : `df_filtered = df.drop(columns=['col2'])`
 
 Merge : 
 ```
@@ -102,6 +137,9 @@ df_mergd = pd.merge(
     how="left"
 )
 ```
+
+Concat : 
+`df_concat = pd.concat([df1, df2], ignore_index=True)`
   
 Pivot (regroupe un tableau par une caractéristique et applique une fonction sur les valeurs) : 
 ```
@@ -123,22 +161,27 @@ df_melt = pd.melt(
    )
 ```
 
-## Changer l'affichage des données
-
-Trier par l'index : `df.sort_index()`  
-Trier par des colonnes : `df.sort_values(by=['col1', 'col2'])`  
-
-Changer l'index : `df.index = df['date'].values`  
-
 ## Création de dataframe
 
 A partir de colonnes
 ```
 dt = pd.DataFrame({
-  'col1': values1,
-  'col2': values2,
-  'col3': values3
+  'col1': [value11, value12],
+  'col2': [value21, value22],
+  'col3': [value31, value32]
 })
+```
+Ou  
+```
+dt = pd.DataFrame([{
+  'col1': value11,
+  'col2': value21,
+  'col3': value31
+}], [{
+  'col1': value12,
+  'col2': value22,
+  'col3': value32
+}])
 ```
 
 ### A partir d'un dictionnaire

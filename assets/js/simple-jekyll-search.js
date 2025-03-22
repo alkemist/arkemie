@@ -312,7 +312,7 @@ var _$src_8 = {};
     sortMiddleware: function () {
       return 0
     },
-    noResultsText: 'No results found',
+    noResultsText: 'Aucun résultat',
     limit: 10,
     fuzzy: false,
     debounceTime: null,

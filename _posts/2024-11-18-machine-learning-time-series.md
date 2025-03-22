@@ -2,7 +2,7 @@
 title: Machine Learning - Time series
 layout: post  
 post-image: "/assets/images/ia/time.jpg"  
-description: "Modèle de Time Series"  
+description: "Dans un problème de time series, on veux prédire en fonction des tendances saisonnières"  
 categories:
   - Fiche
 ---

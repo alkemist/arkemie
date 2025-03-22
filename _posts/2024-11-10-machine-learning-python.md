@@ -2,7 +2,7 @@
 title: Machine Learning - Python
 layout: post  
 post-image: "/assets/images/ia/snake.jpg"  
-description: "Origine de ses fiches, outils utilisés et notes de python"  
+description: "Origine de ces fiches, outils utilisés et notes de python"  
 categories:   
 - Fiche
 ---
@@ -19,70 +19,17 @@ Tout d'abord les différents outils utilisés
 - Plotly / Ipywidgets : Permet d'afficher les graphs
 - Scikit-Learn : Permet de créer les modèles de ML
 - Pycaret : Permet de tester et de trouver le meilleur modèle (s'utilise en classification mais aussi regression ou time series)
-
-## Rappels de python
-
-### Date
-
-`from datetime import datetime`  
-
-Formatage de date : `datetime.now().strftime("%m/%d/%Y %H:%M:%S")`  
-Intervale en secondes : `interval_seconds = interval.total_seconds()`
-
-Corriger les problèmes de timezone : `date.tz_convert(None)`  
-
-### Tableau
-
-Map : `array = [r for r in tab]`   
-Filtrer: 
-```
-tab_filtered = list(
-        filter(
-            lambda c: c not in ['value'], 
-            tab
-        )
-    ) 
-```  
-
-All : `all(x > 0 for x in array)`  
-All numpy : `(np.array([1, 2, 3, 4, 5]) > 0).all()`  
-
-Any : `any(x > 0 for x in array)`  
-Any numpy : `(np.array([1, 2, 3, 4, 5]) > 0).any()`  
-
-### Manipulation de fichiers
-
-```
-import os
-
-if os.path.exists(file_path):
-  file.write('')
-  
-df.to_csv('data.csv', index=False)
-```
-
-### Requètes d'API
-
-```
-import requests
-
-response = requests.get(
-    '', 
-    params={}, 
-    headers={
-        'Authorization': '', 
-        'Content-Type': 'application/json'
-        }
-)
-
-if response.status_code == 200:
-  json = response.json()
-  binary = response.text
-```
+- Poetry : Gestionnaire de paquets et de versions
 
 ## Jupyter
 
 Jupyter sans navigateur `jupyter lab --no-browser`
+
+## Poetry
+
+Ajout d'un package : `poetry add package_name`  
+Execution d'un script : `poetry run script.py`
+
 
 ### Virtual environment
 
