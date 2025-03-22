@@ -3,7 +3,7 @@
         <div class="image is-16by9" style="background-image: url({{post.post-image}});"></div>
     </a>
     <div class="column has-text-left-desktop has-text-left-tablet">
-        <h1 class="title is-size-4-touch">{{post.title}}</h1>
+        <h1 class="title is-size-4-touch color_biscay">{{post.title}}</h1>
         <div class="content color_biscay">
             {% unless page.description.size == 0 %}
             {{post.description | truncate: 300 | strip | strip_html | strip_newlines | escape }}
