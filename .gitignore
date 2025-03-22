@@ -79,6 +79,6 @@ node_modules/
 # NPM / Vue / Webpack
 dist/
 _includes/_scripts.html
-_includes/scripts.html
+#_includes/scripts.html
 
 # End of https://www.toptal.com/developers/gitignore/api/jekyll,ruby
