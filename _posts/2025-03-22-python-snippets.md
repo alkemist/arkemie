@@ -1,5 +1,5 @@
 ---
-title: Python - Snippets
+title: "Python - Snippets"
 layout: post  
 post-image: "/assets/images/autre/tools.jpg"  
 description: "Liste de bouts de code utiles"  

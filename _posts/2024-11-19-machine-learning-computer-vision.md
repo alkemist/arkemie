@@ -1,5 +1,5 @@
 ---
-title: Machine Learning - Computer Vision
+title: "Machine Learning - Computer Vision"
 layout: post  
 post-image: "/assets/images/ia/eye.png"  
 description: "Expérimentations d'apprentissage d'un modèle de Computer Vision"  

@@ -1,5 +1,5 @@
 ---
-title: Python - Scrapping
+title: "Python - Scrapping"
 layout: post  
 post-image: "/assets/images/autre/website.png"  
 description: "Extraire des informations d'un site web"  

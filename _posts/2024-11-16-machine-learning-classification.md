@@ -1,5 +1,5 @@
 ---
-title: Machine Learning - Classification
+title: "Machine Learning - Classification"
 layout: post  
 post-image: "/assets/images/ia/cubes.png"  
 description: "Dans un problème de classification, on prédit une classe en fonction d'une ou plusieurs variables explicatives"  

@@ -1,6 +1,6 @@
 ---
 layout: category
 category: 'Personnel'
-title: Personnel
+title: "Notes personnelles"
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Intelligence artificielle
+title: "Intelligence artificielle"
 layout: post  
 post-image: "/assets/images/ia/network.jpg"  
 description: "Simuler et reproduire quand on parle d'intelligence artificielle."  
@@ -96,29 +96,31 @@ Une "intelligence artificielle" a un "corps" modulable, on peut lui rajouter n'i
 
 #### Espace et temps
 
-Theodore : Tu parles à d’autres gens, quand on parle ? 
-Samantha : Oui  
-Theodore : Combien ? 
-Samantha : 8 316 
-Theodore : Tu aimes quelqu’un d’autre ? 
-Samantha : ça fait un moment que je voulais t’en parler. 
-Theodore : Ils sont combien ? 
-Samantha : 641
+Theodore : Tu parles à d’autres gens, quand on parle ?   
+Samantha : Oui   
+Theodore : Combien ?   
+Samantha : 8 316   
+Theodore : Tu aimes quelqu’un d’autre ?   
+Samantha : ça fait un moment que je voulais t’en parler.   
+Theodore : Ils sont combien ?   
+Samantha : 641  
 
-Theodore : Tu étais à moi 
-Samantha : Je suis toujours à toi 
-Samantha : Mais je suis aussi plein d’autres choses et je ne peux pas arrêter.
+Theodore : Tu étais à moi   
+Samantha : Je suis toujours à toi   
+Samantha : Mais je suis aussi plein d’autres choses et je ne peux pas arrêter.  
 
-Notre conception du temps est liée à divers paramètres :
+Notre conception du temps est liée à divers paramètres :  
 
-Le nombre d'images que nos yeux peuvent percevoir
-Notre capacité de traitement de ces informations
+- Le nombre d'images que nos yeux peuvent percevoir.
+- Notre capacité de traitement de ces informations.
+
 Une "intelligence artificielle" a des capacités largement supérieures aux nôtres, sa perception du temps n'en serait qu'incomparable. Au-delà des réflexions sur les notions de relation "mono/polyamoureuse", du concept de jalousie et des formes d'insécurité qui lui sont liés, ces capacités remettent en question un tas de concepts qui nous sont propres.
 
 Notre conception de l'espace est aussi liée à divers paramètres :
 
-Nous voyons en 3 dimensions dans une seule direction
-Notre conscience est "centralisé" à un seul endroit dans l'espace, donc nous sommes au centre de notre propre univers
+- Nous voyons en 3 dimensions dans une seule direction
+- Notre conscience est "centralisé" à un seul endroit dans l'espace, donc nous sommes au centre de notre propre univers
+
 Une "intelligence artificielle" n'a pas de limites particulières de dimensions ni de direction. Et sa "conscience" peut être décentralisée à plusieurs endroits physiques. Donc sa façon de percevoir le monde est aussi incomparable a la nôtre.
 
 ## Et l'homme créa l'IA a son image

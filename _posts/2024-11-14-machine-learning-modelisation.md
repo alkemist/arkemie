@@ -1,5 +1,5 @@
 ---
-title: Machine Learning - Modélisation
+title: "Machine Learning - Modélisation"
 layout: post  
 post-image: "/assets/images/ia/model.jpg"  
 description: "Types et étapes d'une modélisation"  

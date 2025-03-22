@@ -1,5 +1,5 @@
 ---
-title: Machine Learning - Time series
+title: "Machine Learning - Time series"
 layout: post  
 post-image: "/assets/images/ia/time.jpg"  
 description: "Dans un problème de time series, on veux prédire en fonction des tendances saisonnières"  

@@ -1,5 +1,5 @@
 ---
-title: Machine Learning - Graphiques
+title: "Machine Learning - Graphiques"
 layout: post  
 post-image: "/assets/images/ia/graphiques.jpg"  
 description: "Affichage des graphiques"  

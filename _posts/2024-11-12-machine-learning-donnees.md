@@ -1,5 +1,5 @@
 ---
-title: Machine Learning - Données
+title: "Machine Learning - Données"
 layout: post  
 post-image: "/assets/images/ia/binaries.jpg"  
 description: "Manipulation des données"  

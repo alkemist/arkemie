@@ -1,5 +1,5 @@
 ---
-title: Machine Learning - Python
+title: "Machine Learning - Python"
 layout: post  
 post-image: "/assets/images/ia/snake.jpg"  
 description: "Origine de ces fiches, outils utilisés et notes de python"  

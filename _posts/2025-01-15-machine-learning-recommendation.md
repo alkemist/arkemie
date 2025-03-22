@@ -1,5 +1,5 @@
 ---
-title: Machine Learning - Recommendation
+title: "Machine Learning - Recommendation"
 layout: post  
 post-image: "/assets/images/ia/feedback.jpg"  
 description: "Dans un problème de recommendation, on prédit en fonction en fonction de ressemblance"  

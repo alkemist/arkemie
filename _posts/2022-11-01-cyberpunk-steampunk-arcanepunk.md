@@ -1,5 +1,5 @@
 ---
-title: Cyberpunk - Steampunk - Arcanepunk
+title: "Cyberpunk - Steampunk - Arcanepunk"
 layout: post  
 post-image: "/assets/images/nature/jellyfish-green.jpg"  
 description: "Définition du Cyberpunk, du Steampunk et de l'Arcanepunk."

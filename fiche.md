@@ -1,6 +1,6 @@
 ---
 layout: category
 category: 'Fiche'
-title: Fiches
+title: "Fiches"
 ---
 

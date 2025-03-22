@@ -1,5 +1,5 @@
 ---
-title: Machine Learning - Regression
+title: "Machine Learning - Regression"
 layout: post  
 post-image: "/assets/images/ia/numbers.jpg"  
 description: "Dans un problème de régression, on prédit la variable à expliquer en fonction d'une ou plusieurs variables explicatives"  

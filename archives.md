@@ -1,5 +1,5 @@
 ---
 layout: archives
-title: Archives
+title: "Archives"
 ---
 

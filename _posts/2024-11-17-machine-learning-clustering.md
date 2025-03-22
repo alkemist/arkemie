@@ -1,5 +1,5 @@
 ---
-title: Machine Learning - Clustering
+title: "Machine Learning - Clustering"
 layout: post  
 post-image: "/assets/images/ia/glasses.jpg"  
 description: "Dans un problème de clustering, on veux déterminer les classes pour catégoriser les données"  

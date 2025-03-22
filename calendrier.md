@@ -1,6 +1,6 @@
 ---
-title: Calendrier des publications
 layout: vuejs
+title: "Calendrier des publications"
 ---
 
 <calendrier></calendrier>
