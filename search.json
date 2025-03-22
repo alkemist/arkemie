@@ -6,8 +6,7 @@ layout: compress_json
     {
       "title"    : "{{ post.title | escape }}",
       "title_s"    : "{{ post.title | escape | slugify: 'latin' }}",
-      "category" :  "{{ post.categories | array_to_sentence_string }}",
-      "category_s" :  "{{ post.categories | array_to_sentence_string | slugify: 'latin' }}",
+      "category" :  "{{ post.categories | join:' / ' }}",
       "url"      : "{{ site.url }}{{ site.baseurl }}{{ post.url }}",
       "date"     : "{{ post.date | localize: '%d %B %Y' }}",
       "description" : "{{ post.description | strip_newlines | strip_html | strip | escape }}",
