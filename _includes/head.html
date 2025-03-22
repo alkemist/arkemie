@@ -1,6 +1,4 @@
-<head>
-    {% seo %}
-    {% include meta.html %}
-    <link rel="stylesheet" href="{% if site.baseurl %}{{site.baseurl}}{% else %}{% endif %}/assets/css/style.css">
-  <link rel="shortcut icon" href="{% if site.favicon-url %}{{site.favicon-url}}{% else %}{{ 'assets/images/favicon.png' | absolute_url }}{% endif %}" type="image/x-icon">
-</head>
+{% seo %}
+{% include meta.html %}
+<link rel="stylesheet" href="{% if site.baseurl %}{{site.baseurl}}{% else %}{% endif %}/assets/css/style.css">
+<link rel="shortcut icon" href="{% if site.favicon-url %}{{site.favicon-url}}{% else %}{{ 'assets/images/favicon.png' | absolute_url }}{% endif %}" type="image/x-icon">
