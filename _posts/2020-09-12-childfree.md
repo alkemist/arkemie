@@ -2,7 +2,7 @@
 title: ChildFree et stérilisation volontaire
 layout: post  
 post-image: "/assets/images/autre/freedom.jpg"  
-description: De l’idée à la pratique
+description: "De l’idée à la pratique"
 categories:   
 - Personnel
 ---

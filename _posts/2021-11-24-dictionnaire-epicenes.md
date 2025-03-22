@@ -1,6 +1,10 @@
 ---
-layout: page
-title: Dictionnaire d'épicènes 
+title: Dictionnaire d'épicènes
+layout: post
+post-image: "/assets/images/autre/book.jpg"
+description: "Dictionnaire d'épicènes."
+categories:
+  - Recherche
 ---
 
 # Genre grammatical indéfini

@@ -2,7 +2,7 @@
 title: Mastermind
 layout: post  
 post-image: "/assets/images/autre/mr-robot.webp"  
-description: Le pouvoir par le contrôle
+description: "Le pouvoir par le contrôle"
 categories:   
 - Personnel
 ---

@@ -2,7 +2,7 @@
 title: L'univers d'Arkemie dans les grandes lignes  
 layout: post  
 post-image: "/assets/images/nature/forest.jpeg"  
-description: Époque, découvertes scientifiques majeures et grandes lignes de l’univers d’Arkemie.
+description: "Époque, découvertes scientifiques majeures et grandes lignes de l’univers d’Arkemie."
 categories:
 - Écriture
 - Univers  
