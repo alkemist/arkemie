@@ -1,14 +1,14 @@
 {% assign items_categories = "Réflexion,Recherche,Écriture" | split: "," %}
 
 <div class="navbar-item has-dropdown is-hoverable">
-  <a class="navbar-link">
+  <a class="navbar-link color_citron hover_bg_citron hover_color_biscay">
     Catégories
   </a>
-  <div class="navbar-dropdown has-background-black is-left">
+  <div class="navbar-dropdown bg_biscay is-left">
     {% for category in items_categories %}
       {% if category %}
         <a href="{{site.baseurl}}/{{category | slug}}"
-           class="navbar-item">
+           class="navbar-item color_citron hover_bg_citron hover_bg_biscay">
           {{category}}
         </a>
       {% endif %}

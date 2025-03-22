@@ -4,6 +4,30 @@
     opacity: 0.95;
 }
 
+.navbar-burger,
+.color_citron{color: #B6C540 !important;}
+.navbar-item.has-dropdown.is-active .navbar-link, .navbar-item.has-dropdown:focus .navbar-link, .navbar-item.has-dropdown:hover .navbar-link,
+.navbar-burger span,
+a.navbar-item:hover,a.navbar-item:active, a.navbar-item:focus, a.navbar-item:focus-within,
+a.navbar-link:hover,a.navbar-link:active, a.navbar-link:focus, a.navbar-link:focus-within,
+a.navbar-item.is-active,
+.bg_citron{background-color: #B6C540 !important;}
+.border_citron{border-color: #B6C540 !important;}
+.hover_color_citron:hover{color: #B6C540 !important;}
+.hover_bg_citron:hover{background-color: #B6C540 !important;}
+
+.navbar-item.has-dropdown.is-active .navbar-link, .navbar-item.has-dropdown:focus .navbar-link, .navbar-item.has-dropdown:hover .navbar-link,
+a.navbar-item:hover,a.navbar-item:active, a.navbar-item:focus, a.navbar-item:focus-within,
+a.navbar-link:hover,a.navbar-link:active, a.navbar-link:focus, a.navbar-link:focus-within,
+a.navbar-item.is-active,
+.color_biscay{color: #08295A !important;}
+.bg_biscay{background-color: #08295A !important;}
+.border_biscay{border-color: #08295A !important;}
+.hover_color_biscay:hover{color: #08295A !important;}
+.hover_bg_biscay:hover{background-color: #08295A !important;}
+
+.hover_bold:hover{font-weight: bold;}
+
 .is-active {
     font-weight: 600;
 }
@@ -16,28 +40,8 @@
 
 .navbar-end {
     .navbar-item, .navbar-link {
-        color: #F4F5F6;
+        color: #B6C540;
     }
-}
-
-a.navbar-item:hover,
-.navbar-link:hover {
-    background-color: rgba($color: #fff, $alpha: 0.25) !important;
-    color: white !important;
-}
-
-a.navbar-item.is-active {
-    background-color: rgba($color: #fff, $alpha: 0.25) !important;
-    color: white !important;
-
-    &:hover {
-        background-color: rgba($color: #fff, $alpha: 0.25) !important;
-        color: grey;
-    }
-}
-
-.navbar-link:not(.is-arrowless)::after {
-    border-color: grey;
 }
 
 .hero {
@@ -184,7 +188,7 @@ pre.highlight{
         background: transparent;
         transition: all 0.25s ease;
         &:focus {
-            outline: 0.25rem solid white;
+            outline: 0.25rem solid #B6C540;
         }
 
         border: none;
@@ -207,16 +211,8 @@ pre.highlight{
                 list-style-position: outside;
             }
 
-            a {
-                color: #7a7a7a;
-
-                &:hover {
-                    color: white;
-                }
-            }
-
             figure {
-                border: 1.5px solid white;
+                border: 1.5px solid #B6C540;
                 border-radius: 50rem;
                 justify-content: center;
                 margin: auto;
@@ -235,7 +231,6 @@ pre.highlight{
         a {
             text-decoration: underline;
             font-weight: bolder;
-            color: white;
         }
     }
 }

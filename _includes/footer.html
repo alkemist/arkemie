@@ -1,6 +1,6 @@
 <footer id="footer">
     <!--Footer Main Section-->
-    <div class="has-background-grey-darker">
+    <div class="bg_biscay color_citron">
         <div class="container columns">
             <!--Name Section-->
             <div class="column has-text-left-desktop has-text-centered-mobile">
@@ -12,8 +12,8 @@
                             </figure>
                         </div>
                         <div class="column is-marginless">
-                            <h5 class="has-text-grey-lighter">{{site.author-name}}</h5>
-                            <div class="content has-text-grey">
+                            <h5 style="font-weight: bold">{{site.author-name}}</h5>
+                            <div class="content">
                                 <p>
                                   Développeur web freelance spécialisé Symfony et Angular.<br/>
                                   Introverti hypersensible, idéaliste en quête de sens. <br/>
@@ -21,27 +21,22 @@
                                 </p>
                             </div>
                             {% unless site.author-url == %}
-                                <a href="{{site.author-url}}" target="_blank" class=""><i class="fa fa-home"></i> {{site.author-url}}</a>
+                                <a class="color_citron hover_bold" href="{{site.author-url}}" target="_blank"><i class="fa fa-home"></i> {{site.author-url}}</a>
                             {% endunless %}
-                            <a href="https://eldritch.cafe/@alkemist" target="_blank" rel="me"><i class="fa fa-mastodon"></i> @alkemist@eldritch.cafe</a>
-                            <a href="https://github.com/alkemist" target="_blank" rel="me"><i class="fa fa-github"></i> @alkemist</a>
+                            <a class="color_citron hover_bold" href="https://eldritch.cafe/@alkemist" target="_blank" rel="me"><i class="fa fa-mastodon"></i> @alkemist@eldritch.cafe</a>
+                            <a class="color_citron hover_bold" href="https://github.com/alkemist" target="_blank" rel="me"><i class="fa fa-github"></i> @alkemist</a>
                             <br/>
-                            <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
+                            <a style="margin-top:10px" target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
                                 <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" />
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!--Blog-post Section
-            <div class="column has-text-white">
-                
-            </div>-->
         </div>
     </div>
-    <div class="has-background-black has-text-centered has-text-white" id="credits">
-        <i class="fa fa-copyright"></i> {{ "now" | date: "%Y" }} | <a href="https://github.com/thedevslot/WhatATheme" target="_blank" rel="noopener noreferrer">WhatATheme</a> - A Theme made with <i class="fa fa-heart has-text-danger"></i> by <a href="https://thedevslot.github.io/" target="_blank" rel="noopener noreferrer">TheDevsLot</a> Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://pixabay.com/" target="_blank" rel="noopener noreferrer">Pixabay</a> photos
+    <div class="bg_biscay color_citron has-text-centered" id="credits">
+        <i class="fa fa-copyright color_citron hover_bold"></i> {{ "now" | date: "%Y" }} | <a class="color_citron" href="https://github.com/thedevslot/WhatATheme" target="_blank" rel="noopener noreferrer">WhatATheme</a> - A Theme made with <i class="fa fa-heart has-text-danger"></i> by <a class="color_citron"  href="https://thedevslot.github.io/" target="_blank" rel="noopener noreferrer">TheDevsLot</a> Powered by <a class="color_citron" href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a class="color_citron hover_bold" href="https://pixabay.com/" target="_blank" rel="noopener noreferrer">Pixabay</a> photos
     </div>
 </footer>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">

@@ -4,12 +4,12 @@
     </a>
     <div class="column has-text-left-desktop has-text-left-tablet">
         <h1 class="title is-size-4-touch">{{post.title}}</h1>
-        <div class="content has-text-grey">
+        <div class="content color_biscay">
             {% unless page.description.size == 0 %}
             {{post.description | truncate: 300 | strip | strip_html | strip_newlines | escape }}
             {% endunless %}
             <hr class="has-background-grey">
-            <span class="has-text-grey">Publié le <span class="has-text-weight-semibold">{{ post.date | localize: "%d %B %Y" }}</span></span>
+            <span class="color_biscay">Publié le <span class="has-text-weight-semibold">{{ post.date | localize: "%d %B %Y" }}</span></span>
             |
             <i class="fa fa-clock-o"></i>
             <span class="has-text-weight-semibold">

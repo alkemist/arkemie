@@ -110,6 +110,60 @@ a[data-fslightbox] {
   opacity: 0.95;
 }
 
+.navbar-burger,
+.color_citron {
+  color: #B6C540 !important;
+}
+
+.navbar-item.has-dropdown.is-active .navbar-link, .navbar-item.has-dropdown:focus .navbar-link, .navbar-item.has-dropdown:hover .navbar-link,
+.navbar-burger span,
+a.navbar-item:hover, a.navbar-item:active, a.navbar-item:focus, a.navbar-item:focus-within,
+a.navbar-link:hover, a.navbar-link:active, a.navbar-link:focus, a.navbar-link:focus-within,
+a.navbar-item.is-active,
+.bg_citron {
+  background-color: #B6C540 !important;
+}
+
+.border_citron {
+  border-color: #B6C540 !important;
+}
+
+.hover_color_citron:hover {
+  color: #B6C540 !important;
+}
+
+.hover_bg_citron:hover {
+  background-color: #B6C540 !important;
+}
+
+.navbar-item.has-dropdown.is-active .navbar-link, .navbar-item.has-dropdown:focus .navbar-link, .navbar-item.has-dropdown:hover .navbar-link,
+a.navbar-item:hover, a.navbar-item:active, a.navbar-item:focus, a.navbar-item:focus-within,
+a.navbar-link:hover, a.navbar-link:active, a.navbar-link:focus, a.navbar-link:focus-within,
+a.navbar-item.is-active,
+.color_biscay {
+  color: #08295A !important;
+}
+
+.bg_biscay {
+  background-color: #08295A !important;
+}
+
+.border_biscay {
+  border-color: #08295A !important;
+}
+
+.hover_color_biscay:hover {
+  color: #08295A !important;
+}
+
+.hover_bg_biscay:hover {
+  background-color: #08295A !important;
+}
+
+.hover_bold:hover {
+  font-weight: bold;
+}
+
 .is-active {
   font-weight: 600;
 }
@@ -121,26 +175,7 @@ a[data-fslightbox] {
 }
 
 .navbar-end .navbar-item, .navbar-end .navbar-link {
-  color: #F4F5F6;
-}
-
-a.navbar-item:hover,
-.navbar-link:hover {
-  background-color: rgba(255, 255, 255, 0.25) !important;
-  color: white !important;
-}
-
-a.navbar-item.is-active {
-  background-color: rgba(255, 255, 255, 0.25) !important;
-  color: white !important;
-}
-a.navbar-item.is-active:hover {
-  background-color: rgba(255, 255, 255, 0.25) !important;
-  color: grey;
-}
-
-.navbar-link:not(.is-arrowless)::after {
-  border-color: grey;
+  color: #B6C540;
 }
 
 .hero {
@@ -276,7 +311,7 @@ pre.highlight {
   border: none;
 }
 #search .button:focus {
-  outline: 0.25rem solid white;
+  outline: 0.25rem solid #B6C540;
 }
 
 #footer .container {
@@ -292,14 +327,8 @@ pre.highlight {
   list-style: circle;
   list-style-position: outside;
 }
-#footer .container .column a {
-  color: #7a7a7a;
-}
-#footer .container .column a:hover {
-  color: white;
-}
 #footer .container .column figure {
-  border: 1.5px solid white;
+  border: 1.5px solid #B6C540;
   border-radius: 50rem;
   justify-content: center;
   margin: auto;
@@ -315,7 +344,6 @@ pre.highlight {
 #footer #credits a {
   text-decoration: underline;
   font-weight: bolder;
-  color: white;
 }
 
 @media (min-width: 768px) {
