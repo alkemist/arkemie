@@ -1,32 +1,38 @@
-<footer id="footer">
+<footer id="footer" class="bg_biscay">
     <!--Footer Main Section-->
-    <div class="bg_biscay color_citron">
-        <div class="container columns">
+    <div class=" color_citron">
+        <div class="container columns" style="margin-bottom: 0; padding-bottom: 0;">
             <!--Name Section-->
-            <div class="column has-text-left-desktop has-text-centered-mobile">
+            <div class="column has-text-centered">
                 <div>
-                    <div class="columns">
-                        <div class="column is-one-fifth-desktop is-one-fifth-fullhd is-one-quarter-tablet">
+                    <div class="has-text-centered">
+                        <div class="has-text-centered">
                             <figure class="image is-64x64">
                                 <img class="is-rounded" src="{{site.author-image}}">
                             </figure>
                         </div>
-                        <div class="column is-marginless">
-                            <h5 style="font-weight: bold">{{site.author-name}}</h5>
-                            <div class="content">
-                                <p>
-                                  Développeur web freelance spécialisé Symfony et Angular.<br/>
-                                  Introverti hypersensible, idéaliste en quête de sens. <br/>
-                                  #ChildFree #TDAH #NonBinaire
+                        <div class="has-text-centered" style="margin-top: 10px;">
+                            <h5 class="has-text-centered" style="font-weight: bold; font-size: 1.4rem">{{site.author-name}}</h5>
+                            <div class="content has-text-centered" style="margin-bottom: 10px;">
+                                <p style="font-size: 1.2rem">
+                                  Développeur web freelance <br/>
+                                  Spécialisé PHP/Symfony, TS/Angular et Python.<br/>
+                                  Introverti hypersensible, idéaliste en quête de sens.<br/>
                                 </p>
+                                <div class="margin-top:10px;">
+                                  <span class="tag bg_citron color_biscay">TDAH</span>
+                                  <span class="tag bg_citron color_biscay">Non Binaire</span>
+                                  <span class="tag bg_citron color_biscay">Childfree</span>
+                                </div>
                             </div>
-                            {% unless site.author-url == %}
-                                <a class="color_citron hover_bold" href="{{site.author-url}}" target="_blank"><i class="fa fa-home"></i> {{site.author-url}}</a>
-                            {% endunless %}
-                            <a class="color_citron hover_bold" href="https://eldritch.cafe/@alkemist" target="_blank" rel="me"><i class="fa fa-mastodon"></i> @alkemist@eldritch.cafe</a>
-                            <a class="color_citron hover_bold" href="https://github.com/alkemist" target="_blank" rel="me"><i class="fa fa-github"></i> @alkemist</a>
-                            <br/>
-                            <a style="margin-top:10px" target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
+                            <div class="column">
+                              {% unless site.author-url == %}
+                                  <a class="color_citron hover_bold" href="{{site.author-url}}" target="_blank"><i style="margin-right: 10px;" class="fa fa-home"></i> {{site.author-url}}</a>
+                              {% endunless %}
+                              <a class="color_citron hover_bold" href="https://eldritch.cafe/@alkemist" target="_blank" rel="me"><i style="margin-right: 10px;" class="fa fa-mastodon"></i>alkemist@eldritch.cafe</a>
+                              <a class="color_citron hover_bold" href="https://github.com/alkemist" target="_blank" rel="me"><i style="margin-right: 10px;" class="fa fa-github"></i>alkemist</a>
+                            </div>
+                            <a style="display:inline-block" target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
                                 <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" />
                             </a>
                         </div>
@@ -35,7 +41,7 @@
             </div>
         </div>
     </div>
-    <div class="bg_biscay color_citron has-text-centered" id="credits">
+    <div style="background-color: rgba(0,0,0,0.4)" class="color_citron has-text-centered" id="credits">
         <i class="fa fa-copyright color_citron hover_bold"></i> {{ "now" | date: "%Y" }} | <a class="color_citron" href="https://github.com/thedevslot/WhatATheme" target="_blank" rel="noopener noreferrer">WhatATheme</a> - A Theme made with <i class="fa fa-heart has-text-danger"></i> by <a class="color_citron"  href="https://thedevslot.github.io/" target="_blank" rel="noopener noreferrer">TheDevsLot</a> Powered by <a class="color_citron" href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a class="color_citron hover_bold" href="https://pixabay.com/" target="_blank" rel="noopener noreferrer">Pixabay</a> photos
     </div>
 </footer>

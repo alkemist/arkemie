@@ -50,16 +50,6 @@ body {
     }
 }
 
-.tag {
-    margin: 0.15rem auto;
-    text-decoration: none !important;
-
-    &:hover {
-        background-color: #505050 !important;
-        color: #3273dc;
-        text-decoration: none !important;;
-    }
-}
 
 .is-active {
     font-weight: bold;

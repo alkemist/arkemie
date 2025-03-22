@@ -42,16 +42,6 @@ body {
   width: 8px;
 }
 
-.tag {
-  margin: 0.15rem auto;
-  text-decoration: none !important;
-}
-.tag:hover {
-  background-color: #505050 !important;
-  color: #3273dc;
-  text-decoration: none !important;
-}
-
 .is-active {
   font-weight: bold;
 }
@@ -110,7 +100,7 @@ a[data-fslightbox] {
   opacity: 0.95;
 }
 
-.navbar-burger,
+.navbar-burger, .tag.is-link:hover,
 .color_citron {
   color: #B6C540 !important;
 }
@@ -120,6 +110,7 @@ a[data-fslightbox] {
 a.navbar-item:hover, a.navbar-item:active, a.navbar-item:focus, a.navbar-item:focus-within,
 a.navbar-link:hover, a.navbar-link:active, a.navbar-link:focus, a.navbar-link:focus-within,
 a.navbar-item.is-active,
+.tag,
 .bg_citron {
   background-color: #B6C540 !important;
 }
@@ -140,10 +131,12 @@ a.navbar-item.is-active,
 a.navbar-item:hover, a.navbar-item:active, a.navbar-item:focus, a.navbar-item:focus-within,
 a.navbar-link:hover, a.navbar-link:active, a.navbar-link:focus, a.navbar-link:focus-within,
 a.navbar-item.is-active,
+.tag,
 .color_biscay {
   color: #08295A !important;
 }
 
+.tag.is-link:hover,
 .bg_biscay {
   background-color: #08295A !important;
 }
@@ -174,6 +167,10 @@ a.navbar-item.is-active,
   left: auto;
 }
 
+.navbar-item img {
+  max-height: 3rem !important;
+}
+
 .navbar-end .navbar-item, .navbar-end .navbar-link {
   color: #B6C540;
 }
@@ -197,6 +194,13 @@ pre.highlight {
   background: -webkit-linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 100%);
   background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=1);
+  /*&.is-fullheight{
+      @media (orientation: portrait){
+          @supports (-webkit-appearance:none) {
+              min-height: calc(100vh - 56px);
+          }
+      }
+  }*/
 }
 #hero::before {
   background-image: url(/assets/images/alchimie/cercle-alchimique.jpg);
@@ -214,13 +218,6 @@ pre.highlight {
 }
 #hero.not-found::before {
   background-image: url("/assets/images/nature/bridge.jpeg");
-}
-@media (orientation: portrait) {
-  @supports (-webkit-appearance: none) {
-    #hero.is-fullheight {
-      min-height: calc(100vh - 56px);
-    }
-  }
 }
 
 .title {
@@ -316,7 +313,7 @@ pre.highlight {
 
 #footer .container {
   margin: auto;
-  padding: 1.5rem;
+  padding: 1rem;
   line-height: 1.25;
 }
 #footer .container .column {
@@ -369,14 +366,6 @@ pre.highlight {
 #post .subtitle {
   letter-spacing: 0.05rem;
 }
-#post .tag {
-  margin: 0.15rem auto;
-  text-decoration: none;
-}
-#post .tag:hover {
-  background-color: #505050;
-  text-decoration: none;
-}
 #post .content hr {
   background-color: grey;
 }
@@ -419,6 +408,16 @@ pre.highlight {
 }
 #page-section .content ul, #page-section .content ol, #page-section .content blockquote {
   display: inline-block;
+}
+
+.tag {
+  margin: 0.15rem auto;
+  text-decoration: none !important;
+  font-size: 1rem !important;
+  letter-spacing: 0.1rem;
+}
+.tag:hover {
+  text-decoration: none !important;
 }
 
 /*# sourceMappingURL=style.css.map */

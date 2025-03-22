@@ -4,13 +4,14 @@
     opacity: 0.95;
 }
 
-.navbar-burger,
+.navbar-burger, .tag.is-link:hover,
 .color_citron{color: #B6C540 !important;}
 .navbar-item.has-dropdown.is-active .navbar-link, .navbar-item.has-dropdown:focus .navbar-link, .navbar-item.has-dropdown:hover .navbar-link,
 .navbar-burger span,
 a.navbar-item:hover,a.navbar-item:active, a.navbar-item:focus, a.navbar-item:focus-within,
 a.navbar-link:hover,a.navbar-link:active, a.navbar-link:focus, a.navbar-link:focus-within,
 a.navbar-item.is-active,
+.tag,
 .bg_citron{background-color: #B6C540 !important;}
 .border_citron{border-color: #B6C540 !important;}
 .hover_color_citron:hover{color: #B6C540 !important;}
@@ -20,7 +21,9 @@ a.navbar-item.is-active,
 a.navbar-item:hover,a.navbar-item:active, a.navbar-item:focus, a.navbar-item:focus-within,
 a.navbar-link:hover,a.navbar-link:active, a.navbar-link:focus, a.navbar-link:focus-within,
 a.navbar-item.is-active,
+.tag,
 .color_biscay{color: #08295A !important;}
+.tag.is-link:hover,
 .bg_biscay{background-color: #08295A !important;}
 .border_biscay{border-color: #08295A !important;}
 .hover_color_biscay:hover{color: #08295A !important;}
@@ -36,6 +39,10 @@ a.navbar-item.is-active,
     border: none;
     right: 0;
     left: auto;
+}
+
+.navbar-item img {
+    max-height: 3rem !important;
 }
 
 .navbar-end {
@@ -82,13 +89,13 @@ pre.highlight{
     &.not-found::before {
         background-image: url('/assets/images/nature/bridge.jpeg');
     }
-    &.is-fullheight{
+    /*&.is-fullheight{
         @media (orientation: portrait){
             @supports (-webkit-appearance:none) {
                 min-height: calc(100vh - 56px);
             }
         }
-    }
+    }*/
 }
 .title {
     margin: auto 0.75rem!important;
@@ -261,15 +268,7 @@ pre.highlight{
     #description {
     }
 
-    .tag {
-        margin: 0.15rem auto;
-        text-decoration: none;
 
-        &:hover {
-            background-color: #505050;
-            text-decoration: none;
-        }
-    }
     .content {
         hr{
             background-color: grey;
@@ -325,3 +324,16 @@ pre.highlight{
         }
     }
 }
+
+
+.tag {
+    margin: 0.15rem auto;
+    text-decoration: none !important;
+    font-size: 1rem !important;
+    letter-spacing: 0.1rem;
+
+    &:hover {
+        text-decoration: none !important;;
+    }
+}
+

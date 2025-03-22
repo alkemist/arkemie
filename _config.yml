@@ -15,6 +15,27 @@ description: Quand les symboles s’unissent aux nombres
 site-image: /assets/images/alchimie/cercle-alchimique.jpg
 # Keywords of the Site
 site-keywords:
+  - development
+  - développement
+  - informatique
+  - website
+  - site web
+  - web
+  - deep
+  - machin
+  - learning
+  - vision
+  - model
+  - detection
+  - classification
+  - python
+  - angular
+  - symfony
+  - php
+  - js
+  - guinea pig
+  - cochon d'inde
+  - chon
 # URL for the Image of custom Favicon
 favicon-url: /assets/images/favicon.png
 
@@ -25,9 +46,6 @@ heroimage: /assets/images/alchimie/cercle-alchimique.jpg
 email: alkemist000@gmail.com
 twitter_username:
 github_username:  alkemist
-
-# Google Analytics
-google-analytics: G-8SYXMRHFJG
 
 author:
   name: Jaden ACHAIN
@@ -41,9 +59,9 @@ image:
   path: /assets/images/alchimie/cercle-alchimique.jpg
 
 # Name of the Author
-author-name: Jaden Alkemist
+author-name: Jaden ACHAIN
 # URL for the Image of the Author
-author-image: /assets/images/avatar_bleu.png
+author-image: /assets/images/avatar_2023.png
 author-url: https://jaden-achain.dev
 
 # SASS

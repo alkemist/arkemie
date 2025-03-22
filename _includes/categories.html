@@ -9,14 +9,14 @@
 {% assign linked_categories = "Personnel,Fiche,Réflexion,Recherche,Écriture,Projet" | split: "," %}
 
 {%- unless categories.size == 0 -%}
-<p class="subtitle is-uppercase post-categories">
-    <a href="{{site.baseurl}}/archives"><i class="fa fa-tags"></i></a>
+<p class="is-uppercase post-categories">
+    <a class="color_biscay" href="{{site.baseurl}}/archives"><i class="fa fa-tags"></i></a>
 
     {% for category in categories %}
       {% if linked_categories contains category %}
         <a class="tag is-link" href="{{site.baseurl}}/{{category|slugify: 'latin'}}">{{category}}</a>
       {% else %}
-        <span class="tag is-link">{{category}}</span>
+        <span class="tag">{{category}}</span>
       {% endif %}
       {% unless forloop.last %}&nbsp;{% endunless %}
     {% endfor %}
