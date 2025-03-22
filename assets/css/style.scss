@@ -64,7 +64,7 @@ pre.highlight{
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.75) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=1);
 
-    &::before, &.not-found::before {
+    &::before {
         //filter: blur(0.15rem);
         background-image: url(/assets/images/alchimie/cercle-alchimique.jpg);
         background-position: center;
@@ -78,6 +78,9 @@ pre.highlight{
         position: absolute;
         opacity: 0.25;
         content: "";
+    }
+    &.not-found::before {
+        background-image: url('/assets/images/nature/bridge.jpeg');
     }
     &.is-fullheight{
         @media (orientation: portrait){
