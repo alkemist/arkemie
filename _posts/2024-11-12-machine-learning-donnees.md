@@ -15,12 +15,17 @@ Les données peuvent être récupéré par json `df = pd.read_csv('data.csv')`
 
 Et enregistrer avec : `df.to_csv('data.csv', index=False, header=True)`  
 
+Pour les gros fichiers :   
+Par chunk : `for df_commande in pd.read_csv('commandes.csv', chunksize=100000):`  
+Ou un chunk `pd.read_csv('commandes.csv', chunksize=100000).get_chunk()`  
+
 ## Typage des données
 
 Pandas ne détectent pas forcément bien automatiquement les types des colonnes.
 
 ```
-df['date'] = pd.to_datetime(df['date'], format='%Y%m%d%H')
+df['date'] = pd.to_datetime(df['date'], format='%Y%m%d%H', errors='coerce') # coerce remplace les erreurs par NaT
+
 df['datetime'] = pd.to_datetime(df['datetime'])
 df['duration'] = pd.to_timedelta(df['duration'])
 df['hour'] = pd.to_numeric(df['hour'])
@@ -55,7 +60,7 @@ Les 2 en même temps :
 `df_filterd = df.iloc[1:n, ['col1', 'col2']]`
 
 Valeur null : `df_filtered = df['col1'].isnull()`  
-Valeur non null : `df_filtered = df['col1'].notnull()`
+Valeur non null : `df_filtered = df['col1'].notnull()`  
 Valeur non NA : `pd.notna(value)`
 
 Vérifier si la valeur est présent dans un tableau : `df['col1'].isin(['value1', 'value2'])`  
@@ -103,6 +108,10 @@ df['result'] = np.where(
 
 Modifier une partie des données :  
 `df.loc[condition, 'col1'] = ...`
+
+Calculer une moyenne flottante : `df['col1'].rolling(window=3).mean()`  
+Calcule la différence par rapport à la ligne précédente : `df['col1'].diff()`  
+Calcule la valeur absolue : `df['col1'].abs()`
 
 ## Changer l'affichage des données
 

@@ -93,6 +93,12 @@ regex = re.compile("|".join(re.escape(k) for k in replaces))
 text = regex.sub(lambda x: replaces[x.group(0)], text)
 ```
 
+Detection du charset :   
+```
+import chardet
+chardet.detect(raw_data)
+```
+
 ## Tableau
 
 Map : `array = [r for r in tab]`   
