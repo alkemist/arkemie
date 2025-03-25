@@ -54,27 +54,20 @@ Les 2 en même temps :
 `df_filterd = df.loc[0:n, ['col1', 'col2']]`  
 `df_filterd = df.iloc[1:n, ['col1', 'col2']]`
 
-Tri des colonnes : `df_sorted = df[sorted(df.columns)]`
-
-Selection aléatoire d'un nombre de lignes : `df_sample = df.sample(100)`  
-Selection aléatoire d'une portion: `df_sample = df.sample(frac=0.1)`  
-
 Valeur null : `df_filtered = df['col1'].isnull()`  
 Valeur non null : `df_filtered = df['col1'].notnull()`
 Valeur non NA : `pd.notna(value)`
 
-Where : 
-```
-df['result'] = np.where(
-    df['condition'], 
-    df['true'], 
-    df['false']
-)
-```  
+Vérifier si la valeur est présent dans un tableau : `df['col1'].isin(['value1', 'value2'])`  
 
 Suppression des duplicats `df.drop_duplicates(subset=['col1', 'col2'], keep='last')`  
 
 Valeurs unique : `df['col1'].unique()`
+
+Tri des colonnes : `df_sorted = df[sorted(df.columns)]`
+
+Selection aléatoire d'un nombre de lignes : `df_sample = df.sample(100)`  
+Selection aléatoire d'une portion: `df_sample = df.sample(frac=0.1)`
 
 ## Transformations par colonnes
 
@@ -98,6 +91,15 @@ df['col2'] = df['col1'].apply(
     ) if pd.notna(x) else False
 )
 ```
+
+Remplissage conditionnel :
+```
+df['result'] = np.where(
+    df['condition'], 
+    df['true'], 
+    df['false']
+)
+```  
 
 Modifier une partie des données :  
 `df.loc[condition, 'col1'] = ...`
