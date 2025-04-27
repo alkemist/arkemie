@@ -48,16 +48,14 @@ Moyenne des AP sur toutes les classes d'objets
 Cette métrique mesure la qualité de la prédiction des coordonnées des boîtes englobantes (bounding boxes).
 Elle vérifie dans quelle mesure les boîtes prédites s'alignent avec les boîtes réelles (ground truth).
 
-### Cls Loss
-Cette métrique mesure l'erreur de classification des objets détectés.
-Elle vérifie si le modèle attribue correctement une classe à chaque boîte englobante prédit.
+La box_loss mesure combien votre boîte dessinée chevauche l'objet réel et à quel point sa forme est similaire.  
 
 ### Distribution Focal Loss, DFL Loss 
 Spécifique à des versions modernes de YOLO, cette perte mesure la qualité de la prédiction de régression discrète des coordonnées des boîtes.
-Dans certains modèles (comme YOLOv8), les coordonnées des boîtes ne sont pas directement prédites sous forme continue, mais plutôt comme une distribution discrète ou une approximation par des "bins" (intervalles fixes).
+Dans certains modèles (comme YOLOv8), les coordonnées des boîtes ne sont pas directement prédites sous forme continue, mais plutôt comme une distribution discrète ou une approximation par des "bins" (intervalles fixes).  
 
-## Durées
+La dfl_loss vous aide à positionner précisément les quatre lignes qui composent votre boîte afin qu'elles s'ajustent étroitement aux limites de l'objet.  
 
-| Modèle    | Dataset  Train / Val /Test | Entrainement | Compilation HEF pour Hailo8L |
-|:----------|:--------------------------:|-------------:|-----------------------------:|
-| yolov8n   |     7000 / 2000 / 1000     |     6.5-7.5h |                         2.5h |
+### Cls Loss
+Cette métrique mesure l'erreur de classification des objets détectés.
+Elle vérifie si le modèle attribue correctement une classe à chaque boîte englobante prédit.

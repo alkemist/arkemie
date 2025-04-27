@@ -126,7 +126,8 @@ Parcourir un dictionnaire : `for key, value in dictionnaire.items():`
 import os
 
 if os.path.exists(file_path):
-  file.write('')
+    with open(file_path, "w", encoding="utf-8") as file:
+        file.write('')
   
 ```
 

@@ -2,7 +2,7 @@
 title: "Jour 1"
 layout: post  
 post-image: "/assets/images/nature/brouillard.jpg"  
-description: "Levée du voile dans la douleur."  
+description: "Levée du voile."  
 categories:
 - Écriture
 - Histoire

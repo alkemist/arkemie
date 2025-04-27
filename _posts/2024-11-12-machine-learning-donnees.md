@@ -151,8 +151,17 @@ df_mergd = pd.merge(
 
 Concat : 
 `df_concat = pd.concat([df1, df2], ignore_index=True)`
+
+Pivot (permet d'applatir un tableau avec une ligne par "type" en une colonne par "type") :  
+```
+df_pivot = df.pivot(
+    index='id', 
+    columns='lib', 
+    values='value'
+)
+```
   
-Pivot (regroupe un tableau par une caractéristique et applique une fonction sur les valeurs) : 
+Pivot table (regroupe un tableau par une caractéristique et applique une fonction sur les valeurs) :  
 ```
 df_pivot = pd.pivot_table(
     df, 
