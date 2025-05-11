@@ -1,8 +1,8 @@
 ---
-title: "Jour 1"
+title: "Levée du voile"
 layout: post  
 post-image: "/assets/images/nature/brouillard.jpg"  
-description: "Levée du voile."  
+description: ""  
 categories:
 - Écriture
 - Histoire
@@ -97,7 +97,7 @@ Je restai plusieurs dizaines de minutes sidéré, à contempler le vide, sans r�
 
 Puis je repris doucement les esprits et je commençai à fouiller mes poches.  
 Je trouvai un portefeuille avec à l’intérieur une carte d’identité.  
-On pouvait lire que je m’appelais Jaden Alchemant, que j’étais née le 10 octobre 1875 à Nantes, et donc j’avais 26 ans.  
+On pouvait lire que je m’appelais Jaden Carmanson, que j’étais née le 10 octobre 1875 à Nantes, et donc j’avais 26 ans.  
 Je découvrais aussi que j’habitais au 42 place Carnot et que j'étais concepteur d’automates.  
 Je trouvai aussi quelques billets, une clé que je supposais être celle de chez moi, et un plan de Lyon avec quelques lieux entourés au crayon.
 
