@@ -45,6 +45,12 @@ Corriger les problèmes de timezone : `date.tz_convert(None)`
 
 ## Chaînes
 
+Génération de slug :   
+``` 
+from slugify import slugify
+filename = slugify(title)
+```
+
 Remplissage par le début avec des 0 : `cp.zfill(5)`  
 Suppression des espaces avant/après : `text.strip()`  
 Minuscule : `text.lower()`  
@@ -58,10 +64,12 @@ if "\\u" in text:
 
 Supprimer les accents :
 ``` 
+import unicodedata
+
 def remove_accents(texte):
     texte_normalise = unicodedata.normalize('NFD', texte)
     texte_without_accents = ''.join(c for c in texte_normalise if unicodedata.category(c) != 'Mn')
-    return texte_without_accents.replace('\s+', ' ')
+    return texte_without_accents.replace('\s+', ' ').lower()
 ```
 
 ## Regex

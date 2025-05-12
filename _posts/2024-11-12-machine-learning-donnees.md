@@ -53,26 +53,32 @@ Colonnes : `df.columns`
 ## Filtrage des données
 
 Projections (filtre sur colonnes) : `df_filterd = df[ ['col1', 'col2'] ]`  
-Restrictions (filtre sur lignes) : `df_filtered = df[ df['col1'] == value ]`
+Restrictions (filtre sur lignes) : `df_filtered = df[ df['col1'] == value ]`  
 
 Les 2 en même temps :  
 `df_filterd = df.loc[0:n, ['col1', 'col2']]`  
-`df_filterd = df.iloc[1:n, ['col1', 'col2']]`
+`df_filterd = df.iloc[1:n, ['col1', 'col2']]`  
 
 Valeur null : `df_filtered = df['col1'].isnull()`  
 Valeur non null : `df_filtered = df['col1'].notnull()`  
-Valeur non NA : `pd.notna(value)`
+Valeur non NA : `pd.notna(value)`  
 
 Vérifier si la valeur est présent dans un tableau : `df['col1'].isin(['value1', 'value2'])`  
 
 Suppression des duplicats `df.drop_duplicates(subset=['col1', 'col2'], keep='last')`  
 
-Valeurs unique : `df['col1'].unique()`
+Valeurs unique : `df['col1'].unique()`  
 
-Tri des colonnes : `df_sorted = df[sorted(df.columns)]`
+Tri des colonnes : `df_sorted = df[sorted(df.columns)]`  
 
 Selection aléatoire d'un nombre de lignes : `df_sample = df.sample(100)`  
-Selection aléatoire d'une portion: `df_sample = df.sample(frac=0.1)`
+
+Selection aléatoire d'une portion :  
+- En pourcentage : `df_sample = df.sample(frac=0.1)`  
+- En nombre : `df_sample = df.sample(n=100)`  
+
+Suppression des nulls : `df['col1'].dropna()`  
+Valeurs uniques : `df['col1'].unique()`
 
 ## Transformations par colonnes
 
@@ -84,16 +90,19 @@ Remplissage des données null `df['column'].fillna(df['other_column'])`
 Ajouter / Supprimer du temps : `df['col_date'] + pd.Timedelta(hours=1)`  
 
 Verifier si une colonne contient une regex : `df['col2'] = df['col1'].str.contains('hello') == True`  
-Même chose pour un ensemble de regex
+Même chose pour un ensemble de regex :
 ``` 
+import re
+
 df['col2'] = df['col1'].apply(
-    lambda x: any(
-        test in [
-            'test 1',
-            'test 2',
-        ] 
-        for test in x.split('|')
-    ) if pd.notna(x) else False
+    lambda x: 
+        True if any(
+            re.search(regex, x) for regex in [
+                'test 1',
+                'test 2',
+            ]
+        ) 
+        else False
 )
 ```
 
@@ -109,9 +118,21 @@ df['result'] = np.where(
 Modifier une partie des données :  
 `df.loc[condition, 'col1'] = ...`
 
+## Calculs
+
 Calculer une moyenne flottante : `df['col1'].rolling(window=3).mean()`  
 Calcule la différence par rapport à la ligne précédente : `df['col1'].diff()`  
-Calcule la valeur absolue : `df['col1'].abs()`
+Calcule la valeur absolue : `df['col1'].abs()`  
+
+Calcul d'un centile (0.1 => 10e centile => 10%) : `df['col'].quantile(0.1)`
+
+Décompte groupé (pour chaque article, la 1er ligne aura 1, puis 2...) :
+`df['number'] = df.groupby('article_id').cumcount()`  
+
+Calcul groupé (pour chaque ligne, le calcul se fait sur le group by) :
+`df['amount_max'] = df.groupby('article_id')['amount'].transform('max')`  
+Même chose avec une fonction
+`df['amount_max'] = df.groupby('article_id')['amount'].transform(lambda x: x.quantile(0.1))`
 
 ## Changer l'affichage des données
 
@@ -134,6 +155,20 @@ df_grouped = df\
     .size()\ # pour calculer le nombre d'élements par groupe
     
     .reset_index(name='annonces') # Renomme la colonne calculé
+```
+
+Appliquer plusieurs fonctions d'agrégations :  
+``` 
+df = df.loc[:, ['id', 'amount', 'weight']]\
+    .groupby(['year'])\
+    .agg({
+        'id': ['size'],
+        'amount': ['sum', 'median'],
+        'weight': ['sum', 'median'],
+    })
+
+df.columns = ['_'.join(col).strip() for col in df.columns.values]
+df = df.reset_index()
 ```
 
 Suppression de colonnes : `df_filtered = df.drop(columns=['col2'])`
@@ -185,7 +220,7 @@ df_melt = pd.melt(
 
 A partir de colonnes
 ```
-dt = pd.DataFrame({
+df = pd.DataFrame({
   'col1': [value11, value12],
   'col2': [value21, value22],
   'col3': [value31, value32]
@@ -193,7 +228,7 @@ dt = pd.DataFrame({
 ```
 Ou  
 ```
-dt = pd.DataFrame([{
+df = pd.DataFrame([{
   'col1': value11,
   'col2': value21,
   'col3': value31
@@ -203,6 +238,8 @@ dt = pd.DataFrame([{
   'col3': value32
 }])
 ```
+Ou 
+`df = pd.DataFrame(X, columns=['d1', 'd2'], index=X.index)`  
 
 ### A partir d'un dictionnaire
 
