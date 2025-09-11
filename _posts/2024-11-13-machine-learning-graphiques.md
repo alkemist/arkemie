@@ -9,7 +9,18 @@ categories:
 
 # Outils
 
-Plotly express : `import plotly.express as px`  
+Plotly express : 
+`import plotly.express as px`  
+`import plotly.graph_objects as go`  
+
+Holoviews :
+`import matplotlib.pyplot as plt`  
+`import holoviews as hv`  
+`import hvplot.pandas`  
+`hv.extension("bokeh")`  
+
+Seaborn : 
+`import seaborn as sns`  
 
 # Données
 
@@ -18,8 +29,9 @@ Affiche le nombre de ligne par valeurs de "col" : `df['col'].value_counts()`
 ## Evolutions
 
 Graphes possibles :
-- line (ligne)
-- histogram (barre)
+- line
+- histogram
+- bar
 
 ### Multiline
 2 axes :
@@ -68,6 +80,37 @@ for i, row in df.groupby(column_line).first().reset_index().iterrows():
     )
 ```
 
+## Distribution
+
+Graphes possibles :
+- histogram
+- bar
+- box
+
+`df['hours'].plot(kind='hist', bins=10, color='orange', edgecolor='black', title='Distribution des valeurs')`  
+`df.hvplot.hist(y='age')`
+`df.hvplot.bar(x='age', y='% of participants', rot=50)`  
+
+``` 
+plt.figure(figsize=(20,5))
+sns.countplot(data=df_formated,
+              x='age', hue='sex', palette="rocket",
+              order=df_formated['age'].value_counts().index
+```
+
+``` 
+sns.catplot(data=df_formated,
+    x="age", hue="sex", palette="pastel",
+    kind="count", height=5, aspect=3 # meilleur que 2
+)
+```
+
+``` 
+plt.figure(figsize=(15, 5))
+sns.boxenplot(x='income', y='age', data=df_formated)
+```
+
+
 ## Corrélations
 
 Graphes possibles :
@@ -84,6 +127,8 @@ fig = px.scatter_matrix(df,
 
 fig.update_traces(diagonal_visible=False)
 ```
+
+`df.corr().style.background_gradient()`  
 
 ```  
 fig = px.imshow(
@@ -116,6 +161,10 @@ fig = px.imshow(
 
 ## Outliers
 
+Graphes possibles :
+- box
+
+
 ``` 
 fig = px.box(
     df, 
@@ -125,6 +174,9 @@ fig = px.box(
 ```
 
 ## Dispersion
+
+Graphes possibles :
+- scatter
 
 ```
 fig = px.scatter(df, 

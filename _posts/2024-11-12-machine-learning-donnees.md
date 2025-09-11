@@ -64,6 +64,7 @@ Valeur non null : `df_filtered = df['col1'].notnull()`
 Valeur non NA : `pd.notna(value)`  
 
 Vérifier si la valeur est présent dans un tableau : `df['col1'].isin(['value1', 'value2'])`  
+Vérifier les indexes communs : `df3 = df1[df1.index.isin(df2.index)]`  
 
 Suppression des duplicats `df.drop_duplicates(subset=['col1', 'col2'], keep='last')`  
 
@@ -78,7 +79,7 @@ Selection aléatoire d'une portion :
 - En nombre : `df_sample = df.sample(n=100)`  
 
 Suppression des nulls : `df['col1'].dropna()`  
-Valeurs uniques : `df['col1'].unique()`
+Valeurs uniques : `df['col1'].unique()`  
 
 ## Transformations par colonnes
 
@@ -118,6 +119,11 @@ df['result'] = np.where(
 Modifier une partie des données :  
 `df.loc[condition, 'col1'] = ...`
 
+## Transformations par lignes
+
+Multiplier les valeurs des colonnes en fonction d'une autre colonne :
+`df3 = df1.mul(df2['rating'], axis=0)`  
+
 ## Calculs
 
 Calculer une moyenne flottante : `df['col1'].rolling(window=3).mean()`  
@@ -137,11 +143,15 @@ Même chose avec une fonction
 ## Changer l'affichage des données
 
 Trier par l'index : `df.sort_index()`  
-Trier par des colonnes : `df.sort_values(by=['col1', 'col2'], ascending=[True, False])`
+Trier par des colonnes : `df.sort_values(by=['col1', 'col2'], ascending=[True, False])`  
 
-Changer l'index : `df.index = df['date'].values`
+Changer l'index : `df.index = df['date'].values`  
 
 ## Transformations globales
+
+Series en Dataframe : `s1.to_frame()`
+
+Transposer colonnes et lignes : `df.T`  
 
 Grouper par une partie d'une date : 
 ```
@@ -149,7 +159,7 @@ df_grouped = df\
     .set_index('datetime')\ # Change l'index
     
     .groupby(['col1', 'col2])\ # Groupe par colonne
-    .resample('D')\ # Groupe par jour
+    .resample('D', on='datetime')\ # Groupe par jour sur la colonne "datetime" (par défaut c'est l'index)
     
     .median()\ # pour calculer la médiane par groupe
     .size()\ # pour calculer le nombre d'élements par groupe
@@ -180,12 +190,19 @@ df_mergd = pd.merge(
     df2, 
     left_on="id", 
     right_on="id", 
-    how="left"
+    # left_index=True, # prend l'index gauche plutôt qu'une colonne gauche
+    # right_index=True, # prend l'index droit plutôt qu'une colonne droite
+    how="left" # prend uniquement ce qu'il y a à gauche
+    # how="outer", # prend ce qu'il y a droite et à gauche
 )
 ```
 
 Concat : 
-`df_concat = pd.concat([df1, df2], ignore_index=True)`
+`df_concat = pd.concat(
+    [df1, df2], 
+    ignore_index=True,
+    # axis=1, # Concatène les colonnes au lieu des lignes
+)`
 
 Pivot (permet d'applatir un tableau avec une ligne par "type" en une colonne par "type") :  
 ```

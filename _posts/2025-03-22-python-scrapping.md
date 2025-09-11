@@ -1,7 +1,7 @@
 ---
 title: "Python - Scrapping"
 layout: post  
-post-image: "/assets/images/autre/website.png"  
+post-image: "/assets/images/informatique/website.png"  
 description: "Extraire des informations d'un site web"  
 categories:
   - Fiche

@@ -11,6 +11,22 @@ categories:
 
 Pour prédire sur un cycle (annuel par exemple), il faut au moins 3 cycles, 2 pour du test et 1 pour de la validation
 
+## Analyse
+
+``` 
+from statsmodels.tsa.seasonal import seasonal_decompose
+
+r = seasonal_decompose(df_train.set_index('ds'), period=period)
+
+fig = r.plot()
+fig.set_figwidth(12)
+fig.set_figheight(8)
+plt.tight_layout()
+
+for ax in fig.get_axes():
+    ax.set_xticks([])
+```
+
 ## Classique
 
 ```
@@ -48,7 +64,7 @@ from sktime.forecasting.exp_smoothing import ExponentialSmoothing
 
 forecaster = ExponentialSmoothing(trend="add", seasonal="add")
 # trend : tendance sur toutes les données
-# seasonal : tendance sur un cycle (12 mois / 52 semaines / ...)
+# seasonal : tendance sur un cycle (12 mois / 52 semaines / 365 jours / ...)
 ```
 
 ### ARIMA
@@ -104,29 +120,30 @@ MASE = mean_absolute_scaled_error(y_true=y_true, y_pred=y_pred, y_train=y_train)
   - 0 < MASE < 1 : meilleur qu'un modèle naif
   - MASE > 1 : moins performant qu'un modèle naif
 
-## Prophet / Silverkite / Greykite
+## Prophet
 
 ```
-from greykite.framework.templates.autogen.forecast_config
-import ForecastConfig, MetadataParam
+from prophet import Prophet
 
-forecast_config = ForecastConfig(
-    model_template = "SILVERKITE", # ou PROPHET
-    forecast_horizon = 365,
-    coverage = 0.95,
-    metadata_param = MetadataParam(
-        time_col = "date",
-        value_col = "y",
-        freq = "D" # Pour une fréquence journalière
-    )
+forecast = Prophet(
+    **params
+)
+```
+
+### Entrainement et prédiction
+
+``` 
+forecaster.fit(df_train)
+
+df_test_pred = forecaster.make_future_dataframe(
+    periods=365, # 52, 12, ...
+    freq='D', # 'W', 'M', 'Y'
+    include_history=False
 )
 
-forecaster = Forecaster()
+df_test_pred = forecaster.predict(df_test_pred)
 
-result = forecaster.run_forecast_config(
-    df=df,
-    config=forecast_config
-)
+y_test_pred = df_test_pred['yhat']
 ```
 
 ### Métriques
@@ -136,6 +153,69 @@ Forecast VS Actual
 
 `SMAPE = result.backtest.test_evaluation['sMAPE']`
 
-### Prédiction
+### Hyperparametres
 
-`pred = result.model.predict()`
+``` 
+from mango.tuner import Tuner
+from scipy.stats import uniform
+
+param_space = dict(
+    yearly_seasonality = [True, False],
+    weekly_seasonality = [True, False],
+    daily_seasonality = [True, False],
+    growth = ['linear', 'flat'], # , 'logistic' (nécessite un paramètre en plus)
+    seasonality_mode = ['additive', 'multiplicative'],
+    n_changepoints  = range(0, 55, 5),
+    changepoint_range  = uniform(0.5, 0.5),
+    seasonality_prior_scale=uniform(5.0, 15.0),
+    changepoint_prior_scale=uniform(0.0, 0.1),
+    interval_width = uniform(0.2, 0.8),
+    uncertainty_samples = [500, 1000, 1500, 2000]
+)
+
+def objective_function(args_list):
+    params_evaluated = []
+    results = []
+
+    for params in args_list:
+        try:
+            model = Prophet(**params)
+
+            model.fit(df_train)
+
+            prophet_future = model.make_future_dataframe(periods=period, freq=freq)
+
+            for X_pred in X_preds:
+                prophet_future[X_pred] = df_prophet[X_pred][-period:]
+
+            forecast = model.predict(prophet_future)
+            predictions_tuned = forecast.tail(period)
+            error = mape(df_test['y'], predictions_tuned['yhat'])
+
+            params_evaluated.append(params)
+            results.append(error)
+        except:
+            #print(f"Exception raised for {params}")
+            #pass
+            params_evaluated.append(params)
+            results.append(25.0)# Giving high loss for exceptions regions of spaces
+
+        #print(params_evaluated, mse)
+    return params_evaluated, results 
+    
+conf_Dict = dict()
+conf_Dict['initial_random'] = 10
+conf_Dict['num_iteration'] = 50
+
+tuner = Tuner(param_space, objective_function, conf_Dict)
+results = tuner.minimize()
+
+print('best loss:', results['best_objective'])
+
+print('best parameters:')
+print('')
+
+for parameter, value in results['best_params'].items():
+    print(f"{parameter}= ",f"'{value}'" if isinstance(value,str) else value, ",")
+    #print(f"'{parameter}': ",f"'{value}'" if isinstance(value,str) else value, ",")
+```
