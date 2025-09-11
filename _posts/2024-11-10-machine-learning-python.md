@@ -20,6 +20,7 @@ Tout d'abord les différents outils utilisés
 - Scikit-Learn : Permet de créer les modèles de ML
 - Pycaret : Permet de tester et de trouver le meilleur modèle (s'utilise en classification mais aussi regression ou time series)
 - Poetry : Gestionnaire de paquets et de versions
+- Streamlit : Permet de déployer une application
 
 ## Jupyter
 
@@ -28,8 +29,14 @@ Jupyter sans navigateur `jupyter lab --no-browser`
 ## Poetry
 
 Ajout d'un package : `poetry add package_name`  
-Execution d'un script : `poetry run script.py`
+Execution d'un script : `poetry run script.py`  
 
+Usage d'une version (use/remove) : 
+- `poetry env use /full/path/to/python`  
+- `poetry env use python3.7`  
+- `poetry env use 3.7`  
+
+Verification : `poetry env info`  
 
 ### Virtual environment
 
@@ -65,4 +72,10 @@ python -m ipykernel install --name 3.10 --display-name "Python 3.10" --user
 Lister les kernels : `jupyter kernelspec list`  
 Supprimer un kernel : `jupyter kernelspec remove 3.10`  
 
+## Fichiers
+
+Fichiers utiles :
+- `Makefile` : Makefile avec des commandes telles que `make data` ou `make train`
+- `setup.py` : Rend le projet installable via `pip install -e .` afin que src puisse être importé  
+- `src/__init__.py` : Rend src un module Python  
 
