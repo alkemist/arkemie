@@ -10,19 +10,23 @@ categories:
 
 # Liste de bouts de code utiles
 
+## Nombres
+
+Partie entière de la division : `a // b`  
+
 ## Date
 
 `from datetime import datetime`
 
 Date => chaîne : `datetime.now().strftime(format)`  
-Chaîne => date : `datetime.strptime(date_str, format)`
+Chaîne => date : `datetime.strptime(date_str, format)`  
 
-Intervale en secondes : `interval_seconds = interval.total_seconds()`
+Intervale en secondes : `interval_seconds = interval.total_seconds()`  
 
 Exemples de formats de date :
-- `%m/%d/%Y %H:%M:%S` : 01/02/2025 10:05:06
-- `%Y%m%d%H` : 20250102
-- `%d %B %Y %H:%M` : 2 January 2025 10:05
+- `%m/%d/%Y %H:%M:%S` : 01/02/2025 10:05:06   
+- `%Y%m%d%H` : 20250102  
+- `%d %B %Y %H:%M` : 2 January 2025 10:05  
 
 Codes :
 - `%a` :	Weekday as Sun, Mon
@@ -41,7 +45,7 @@ Codes :
 - `%S` :	Seconds from 00 to 59
 - `%f` :	Microseconds 6 decimal numbers
 
-Corriger les problèmes de timezone : `date.tz_convert(None)`
+Corriger les problèmes de timezone : `date.tz_convert(None)`  
 
 ## Chaînes
 

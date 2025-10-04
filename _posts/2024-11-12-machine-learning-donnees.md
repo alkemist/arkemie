@@ -153,6 +153,11 @@ Series en Dataframe : `s1.to_frame()`
 
 Transposer colonnes et lignes : `df.T`  
 
+Met à jour par écrasement : `df1.update(df2)`   
+
+Met à jour uniquement les valeurs null de df1 et ne remplace pas les valeurs non null de df1 par des valeurs null de df2: (consomme plus de mémoire parce que vérifie tout df1)  
+`df1.combine_first(df2)`  
+
 Grouper par une partie d'une date : 
 ```
 df_grouped = df\
