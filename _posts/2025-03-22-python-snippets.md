@@ -132,6 +132,23 @@ Any numpy : `(np.array([1, 2, 3, 4, 5]) > 0).any()`
 
 Parcourir un dictionnaire : `for key, value in dictionnaire.items():`
 
+Methodes pour avoir une liste de combinaisons ([itertools](https://docs.python.org/3/library/itertools.html)) :  
+
+| Fonction                               | Description                                                   | Répétition | Ordre  |
+|:---------------------------------------|:--------------------------------------------------------------|:----------:|:------:|
+| product(x1, x2, ...)                   | cartesian product, equivalent to a nested for-loop            |    Oui     |  Oui   |
+| permutations(x[, r])	                  | r-length tuples, all possible orderings, no repeated elements |    Non     |  Oui   |
+| combinations(x, r)                     | r-length tuples, in sorted order, no repeated elements        |    Non     |  Non   |
+| combinations_with_replacement(x, r)    | r-length tuples, in sorted order, with repeated elements      |    Oui     |  Non   |
+
+| Fonction                                  | Exemple                                         |
+|:------------------------------------------|:------------------------------------------------|
+| product('ABCD', repeat=2)                 | AA AB AC AD BA BB BC BD CA CB CC CD DA DB DC DD |
+| permutations('ABCD', 2)                   | AB AC AD BA BC BD CA CB CD DA DB DC             |
+| combinations('ABCD', 2)                   | AB AC AD BC BD CD                               |
+| combinations_with_replacement('ABCD', 2)  | AA AB AC AD BB BC BD CC CD DD                   |
+
+
 ## Manipulation de fichiers
 
 ```
