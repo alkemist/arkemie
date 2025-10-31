@@ -16,6 +16,8 @@ Dans un problème de classification, on prédit une classe en fonction d'une ou 
 
 ## Algorithmes
 
+{% include image.html img="ia/classifier_comparison.png" alt="Classifier comparison" %}
+
 ### Algorithmes linéaires
 
 Ces algorithmes prennent en compte une relation linéaire entre les variables d'entrée (features) et la sortie (classe).
