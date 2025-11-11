@@ -15,7 +15,7 @@ categories:
 > Bip…
 
 Ce son vibrait à mes oreilles pour me rappeler doucement à la réalité, comme une main tendue, ou plutôt une tape sur la tête.  
-Les paupières lourdes et la vision embrumées, j’essayais de me remémorer où j’étais.  
+Les paupières lourdes et la vision embrumée, j’essayais de me remémorer où j’étais.  
 Ma respiration était difficile, je déglutis plusieurs fois pour m’aider à reprendre mon souffle.  
 
 Je commençais à distinguer les contours de la pièce, sa blancheur m’aveuglait et m’empêchait de trop ouvrir les yeux.  
@@ -25,7 +25,7 @@ Un peu plus loin, je remarquai une porte, avec, le long du mur, de grandes vitre
 Je regardai ensuite vers la gauche et je constatai une chaise et un canapé où était disposé un manteau sombre et quelques vêtements.  
 Les détails étaient encore difficiles à percevoir.  
 
-En décidant de me lever, je sentis les câbles accrochés à mes bras. Ils me bloquèrent comme pour me rappeler à l’ordre. Je n’avais pas un autre choix que de me rallonger.  
+En décidant de me lever, je sentis les câbles accrochés à mes bras. Ils me bloquèrent comme pour me rappeler à l’ordre. Je n’avais pas d'autre choix que de me rallonger.  
 Après avoir retiré l’aiguille, les quelques pinces et autres fils branchés sur mon corps, je soulevai timidement mes jambes vers la droite pour pouvoir toucher le sol.  
 
 Mais en essayant de prendre un faible élan, tout mon poids s’effondra sur le carrelage froid, et je ne puis retenir un cri qui venait du fond de mes entrailles.  
@@ -78,9 +78,9 @@ Je croisai le regard de la personne assis à son poste, mais elle n’eut pas le
 Je pris quelques secondes pour reprendre mon souffle de cet effort dont je ne me croyais pas capable.  
 Le soleil allait donner congé, la rue n’était pas très vivante, je m’empressai de prendre par la droite pour m’éloigner de cet endroit.  
 
-Après quelques centaines de mètres, j’aperçus un tram arrivé et je bondis dedans.  
+Après quelques centaines de mètres, j’aperçus un tram qui arrivait et je bondis dedans.  
 Quand il partit, j’aperçus environ 3 personnes qui sortaient d’une rue et qui regardaient aux alentours frénétiquement, mais heureusement elles ne m’avaient pas remarqué.  
-Le tram était rempli de personnes bien habillées qui étaient plongées dans leurs journaux. Je m’essayai à côté d’une d’entre elles, et j’observais le tram traverser un pont pour arriver sur une grande place.
+Le tram était rempli de personnes bien habillées et plongées dans leurs journaux. Je m’assis à côté de l’une d’entre elles, et j’observais le tram traverser un pont pour arriver sur une grande place.
 
 Je m'assis sur un banc pour reprendre mon souffle et me poser un petit peu.  
 Je commençais à prendre la mesure des évènements et le fait que je n'avais aucun souvenir de ces derniers jours, ni même des dernières semaines ou années.
@@ -104,7 +104,7 @@ Je trouvai aussi quelques billets, une clé que je supposais être celle de chez
 Avec ces informations, je me décidai de rentrée chez moi.  
 Avec un peu de chance, je pourrais y voir plus clair et retrouver des souvenirs.  
 Je m’avançai près d’un immeuble pour découvrir que j’étais sur la place Bellecour.  
-Puis j'avançai sur la rue Victor Hugo, pour me diriger vers la place Carnot.
+Puis j'avançai dans la rue Victor Hugo, pour me diriger vers la place Carnot.
 
 Une fois arrivé devant mon appartement, j’ouvris la porte avec une certaine hésitation, mes mains tremblotaient.  
 Je ne savais pas si j’avais peur de trouver quelque chose qui ne me plairait pas, ou si c’était seulement l’émotion de la situation dans laquelle je me trouvais.  
@@ -115,7 +115,7 @@ Ma respiration commença à devenir difficile et mon cœur s’accélérait.
 Je sentis des gouttes perler de mon front.  
 Je peinais à localiser les différents meubles de la pièce, qui s’agitaient et s’entremêlaient.
 
-Puis un courant d’air entra et fit claquer la porte. Un bruit sourd frappa mon crâne et je mis les mains sur mes oreilles comme pour étouffer le bruit qui résonnait en moi.  
+Un bruit sourd frappa mon crâne et je mis les mains sur mes oreilles comme pour étouffer le bruit qui résonnait en moi.  
 Un cri intérieur qui cherchait à s’échapper sans trouver aucune porte de sortie.
 
 > « Qu’est-ce qui m’arrive ? », me demandais-je
@@ -128,7 +128,7 @@ Des larmes se mirent à couler de mes yeux.
 
 Je sentis petit à petit mon attention se disperser et je n’arrivais plus à garder les yeux ouverts.  
 Mes bras commençaient à se détendre, et mon corps tomba sur le côté.  
-Mes yeux au niveau du plancher se fermèrent progressivement.  
+Mes yeux qui fixaient le plancher se fermèrent progressivement.
 
 Dans le noir total de mon esprit, une petite voix discrète se faisait entendre, comme un son venant d’un profond tunnel.  
 Et pendant quelques secondes, le temps sembla s’arrêter.  
