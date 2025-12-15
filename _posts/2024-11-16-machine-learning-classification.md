@@ -165,7 +165,7 @@ dataset_train, dataset_test = train_test_split(
 
 ### Comparaisons
 
-On lance la comparaison des différents algorithmes
+On lance la comparaison des différents algorithmes  
 `model = compare_models(exclude=[])`
 
 ### Optimisations des hyper-paramètres
@@ -178,6 +178,8 @@ On lance la comparaison des différents algorithmes
 
 ## Métriques
 
+{% include image.html img="ia/tp-fp-fn-tn.png" alt="Classifier comparison" %}
+
 ### Matrice de confusion
 La matrice de confusion répertorie le nombre d'échantillons prédit pour chaque classe possible en fonction de la classe réelle
 
@@ -186,17 +188,20 @@ La matrice de confusion répertorie le nombre d'échantillons prédit pour chaqu
 ### Précision
 La précision est la proportion de tests retournés positifs à raison parmi l'ensemble des tests retournés positifs
 
-`precision = VP / (VP + FP)`
+`precision = TP / (TP + FP)`
 
 ### Rappel
 Le rappel est la proportion de tests qui ont été retourné positifs parmi l'ensemble des tests qui auraient dû être retournés positifs
 
-`recall = VP / (VP + FN)`
+`recall = TP / (TP + FN)`
 
 ### ROC / AUC
 
-La courbe ROC permet de comparer différents algorithmes en faisant varier leur seuil de détection
-Le modèle avec la plus grand aire sous la courbe est le meilleur modèle
+{% include image.html img="ia/roc-curve-auc.png" alt="Classifier comparison" %}
+La courbe jaune correspond aux Vrai Négatif, et la bleu Vrai Positif, l'intersection étant le seuil d'erreur possible.  
+
+La courbe ROC permet de comparer différents algorithmes en faisant varier leur seuil de détection.  
+Le modèle avec la plus grand aire sous la courbe est le meilleur modèle.  
 
 `plot_model(best_model, plot='auc')`
 
