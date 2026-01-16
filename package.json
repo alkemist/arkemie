@@ -21,7 +21,7 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.24.0",
-    "fslightbox": "^3.3.1",
+    "fslightbox": "^3.6.2",
     "sass": "^1.57.1",
     "simple-jekyll-search": "^1.10.0",
     "vue": "^2.7.14",
